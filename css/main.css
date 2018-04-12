@@ -25,9 +25,21 @@ body {
 .button-collapse i {
     font-size: 35px !important;
 }
+.badge {
+    border: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: none;
+    padding: 0px 0.5rem;
+    background: #fff;
+    cursor: default;
+}
 /* C */
 .container-fluid {
-    margin-left: 3%;
+    margin-left: 4%;
     margin-right: 3%;
 }
 .card:hover {
@@ -66,16 +78,13 @@ h6 {
     padding: 100px;
     background: url(https://static.pexels.com/photos/66997/pexels-photo-66997.jpeg) center center;
     background-size: cover;
-    height: 300px;
+    height: 340px;
     top: 0 !important;
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-}
-.intro-section-content h3 {
-    font-family: 'Slabo 27px', serif;
 }
 @media screen and (max-width: 768px) {
 	.intro-section {
@@ -84,7 +93,7 @@ h6 {
 }
 .intro-section-content {
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 0px;
     right: 0px;
 }
@@ -123,7 +132,9 @@ nav {
 /* O */
 
 /* P */
-
+p {
+    font-size: 16px;
+}
 /* Q */
 
 /* R */
@@ -158,6 +169,18 @@ nav {
 }
 .skill-level.java {
     width: 35%;
+}
+.skill-level.javascript {
+    width: 25%;
+}
+.skill-level.git {
+    width: 40%;
+}
+.skill-level.macos {
+    width: 90%;
+}
+.skill-level.windows {
+    width: 75%;
 }
 .skill-level.javascript {
     width: 25%;
