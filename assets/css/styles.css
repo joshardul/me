@@ -266,11 +266,10 @@ p {
 @media (max-width: 767px) {
   .sidebar-wrapper {
     position: static;
-    width: 100%;
+    width: inherit;
   }
   .main-wrapper {
     padding: 30px;
-      width: 100% !important;
   }
   .main-wrapper .time {
     position: static;
@@ -279,9 +278,6 @@ p {
   }
   .main-wrapper .upper-row {
     margin-bottom: 0;
-  }
-  .wrapper {
-    width: 100%;
   }
 }
 /* Small devices (tablets, 768px and up) */
