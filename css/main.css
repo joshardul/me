@@ -155,17 +155,18 @@ nav {
 }
 .skill-container {
     background: #eeeeee;
-    height: 15px;
+    height: 5px;
+    margin-bottom: 10px;
 }
 .skill-level {
-    height: 15px;
+    height: 5px;
     background: #00BFA5;
 }
 .skill-level.html {
-    width: 90%;
+    width: 95%;
 }
 .skill-level.css {
-    width: 90%;
+    width: 95%;
 }
 .skill-level.python {
     width: 60%;
@@ -180,12 +181,12 @@ nav {
     width: 40%;
 }
 .skill-level.macos {
-    width: 90%;
+    width: 95%;
 }
 .skill-level.windows {
     width: 75%;
 }
-.skill-level.javascript {
+.skill-level.swift {
     width: 25%;
 }
 .special-badge {
