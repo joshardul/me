@@ -195,6 +195,10 @@ nav {
     background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-color: #fff; text-transform: lowercase; border-width: 8px; border-radius: 50px; padding-left: 30px; padding-right: 30px;
 }
+.section-header {
+    font-size: 30px;
+    font-weight: 300;
+}
 /* T */
 .tabs .indicator {
     position: absolute;
