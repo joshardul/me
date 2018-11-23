@@ -1,7 +1,9 @@
 /* Imports */
 @import 'https://fonts.googleapis.com/css?family=Slabo+27px';
 /* # */
-
+.sevenplush-breakdown-text {
+    font-size: 16px;
+}
 /* A */
 .absol {
     position: absolute;
