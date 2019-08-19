@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shardul Joshi</title>
@@ -14,7 +15,7 @@
     </head>
     <body>
         <header>
-            <ul class="side-nav" id="mobile-demo">
+            <ul class="sidenav" id="mobile-demo">
                 <img src="img/boston.JPG" width="100%" height="auto">
                 <h5 class="center grey-text text-darken-2">Shardul Joshi</h5>
                 <p class="center grey-text text-darken-2" style="margin-bottom: 20px">Andover, MA</p>
@@ -25,11 +26,10 @@
                 <li><a href="mailto:joshardul@gmail.com">Email Me</a></li>
                 <li><a href="Resume.pdf">Resume</a></li>
                 <li class="divider"></li>
-                <li style="padding-left: 15px"><i>This site was built with the aid of...</i></li>
                 <li><a href="https://materializecss.com">MaterializeCSS</a></li>
                 <li><a href="https://fontawesome.com">Font Awesome</a></li>
             </ul>
-            <a href="#" data-activates="mobile-demo" class="button-collapse" style="z-index: 900"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="z-index: 900"><i class="material-icons">menu</i></a>
             <section id="home">
                 <div class="intro-section"></div>
                 <div class="intro-section-content">
@@ -64,7 +64,7 @@
         <main>
             <br>
             <div class="container-fluid">
-                <section id="about-me" class="section scrollspy" style="margin-bottom: 20px">
+                <section id="about-me" class="section scrollspy" style="margin-bottom: -20px;">
                     <div class="row">
                         <div class="col s12">
                             <span class="section-header"> About Me</span>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="experience" class="section scrollspy" style="margin-bottom: 20px">
+                <section id="experience" class="section scrollspy" style="margin-bottom: -40px;">
                     <div class="row">
                         <div class="col m4 s12 hide-on-med-and-up">
                             <span class="section-header">Experience</span>
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="portfolio" class="section scrollspy">
+                <section id="portfolio" class="section scrollspy" style="margin-bottom: -50px;">
                     <div class="row">
                         <div class="col m4 s12">
                             <span class="section-header">Portfolio</span>
@@ -205,9 +205,9 @@
                             <img src="img/portfolio/iamv.png" class="responsive-img materialboxed" data-caption="Indian Association of Merrimack Valley website screenshot">
                             <a class="modal-trigger" href="#iamv"><p class="portfolio-project-titles">Indian Association of Merrimack Valley</p></a>
                             <img src="img/portfolio/amaurycelectric.png" class="responsive-img materialboxed" data-caption="Amaury Castillo Electric website screenshot">
-                            <a class="modal-trigger" href="#ace"><p class="portfolio-project-titles">Amaury Castillo Electric</p></a>
+                            <a class="modal-trigger" href="#mda"><p class="portfolio-project-titles">Amaury Castillo Electric</p></a>
                             <img src="img/portfolio/keshiascleaningservices.png" class="responsive-img materialboxed" data-caption="Keshia's Cleaning Services website screenshot">
-                            <a class="modal-trigger" href="#kcs"><p class="portfolio-project-titles">Keshia's Cleaning Services</p></a>
+                            <a class="modal-trigger" href="#iamv"><p class="portfolio-project-titles">Keshia's Cleaning Services</p></a>
                         </div>
                     </div>
                 </section>
@@ -253,10 +253,10 @@
                             <div class="hr"></div>
                             <br>
                             <div class="chip white-text" style="background: #455A64">Technical Skills</div>
-                            <div class="chip">Python</div>
+                            <div class="chip">Python3</div>
                             <div class="chip">Java</div>
-                            <div class="chip">HTML</div>
-                            <div class="chip">CSS</div>
+                            <div class="chip">HTML5</div>
+                            <div class="chip">CSS3</div>
                             <div class="chip">JavaScript</div>
                             <div class="chip">C</div>
                             <div class="chip">Swift</div>
@@ -284,18 +284,16 @@
             </div>
         </main>
         <br>
-        <footer class="teal lighten-3 white-text page-footer">
-            <div class="container-fluid">
-                <div class="row">
-<!--
-                    <div class="col s12">
-                        <p class="align-center">Built using <a class="white-text" href="">Materialize</a> and <a class="white-text" href="">FontAwesome</a></p>
-                    </div>
--->
-                    <div class="col s6">
+        <footer style="height: 80px;" class="teal lighten-3 white-text">
+            <div class="container-fluid" style="height: 80px;">
+                <div class="row" style="height: 80px;">
+                    <div class="col s2" style="height: 80px; padding-top: 25px">
                         <a href="mailto:joshardul@gmail.com" class="white-text"><h6 style="line-height: 20px;">joshardul</h6></a>
                     </div>
-                    <div class="col s6">
+                    <div class="col s8" style="height: 80px; padding-top: 12px">
+                        <p class="align-center">Built using <a class="white-text" href="">Materialize</a> and <a class="white-text" href="">FontAwesome</a></p>
+                    </div>
+                    <div class="col s2" style="height: 80px; padding-top: 25px">
                         <a href="https://syntax-solutions.xyz" class="white-text"><h6 style="line-height: 20px;" class="right">Syntax<b>Solutions</b></h6></a>
                     </div>
                 </div>
@@ -313,130 +311,24 @@
             </ul>
         </div>
         <!-- Modals -->
-        <div id="7plush" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>7PlusH <a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
-                <div class="hr"></div>
-            </div>
+        <div id="ss" class="modal">
             <div class="modal-content">
-                <br>
-                <div class="container-fluid">
-                    <p class="indent sevenplush-breakdown-text">In the fall of 2017, Andover High School implemented a new block schedule known as 7+H. With 8 days, 7 classes, and 1 enrichment period, students were having difficulty keeping track of their schedule. While there was an Android app, few people knew about it and most students were iOS users. Many students ended up taking screenshots of their schedule and saving them as their wallpapers. This was a quite ineffective method as in order to fit the enter 8-day cyle on the screen, the font size had to be very small, leaving students squinting to look at their next class. Having experienced their struggle, I began working on an iOS app, written in swift.</p>
-                    <h6>User Interaction</h6>
-                    <div class="hr"></div>
-                    <div class="row">
-                        <div class="col s9 valign-wrapper">
-                            <p class="sevenplush-breakdown-text">On first, launch users are presented with a page of instructions about setting up the app and general use. When they click the green "Get Started" button, they are prompted to login to Aspen.</p>
-                        </div>
-                        <div class="col s3">
-                            <img src="img/portfolio/7plush/help.png" style="width: 100%">
-                        </div>
-                        <div class="col m3">
-                            <img src="img/portfolio/7plush/home.png" style="width: 100%">
-                        </div>
-                        <div class="col m9 valign-wrapper">
-                            <p class="sevenplush-breakdown-text">When they login, the app automatically navigates to a page in Aspen on which the student's personal schedule is listed. It can then parse the HTML and save <b>only</b> the schedule information to a file on the student's phone. <b>Nothing else is saved:</b> no passwords, no user information, just the class names, teacher names, and room numbers. A list of the days of the 8-day cycle are displayed for the user to click.</p>
-                        </div>
-                        <div class="col s9 valign-wrapper">
-                            <p class="sevenplush-breakdown-text">Clicking on one of these days will bring up an easy-to-read view of the student specific classes for the day.</p>
-                        </div>
-                        <div class="col s3">
-                            <img src="img/portfolio/7plush/scheduleview.png" style="width: 100%">
-                        </div>
-                    </div>
-                    <h6>Next Steps</h6>
-                    <div class="hr"></div>
-                    <p class="indent sevenplush-breakdown-text">The school's IT department has reviewed the app code and approved the concept of sharing with student body. I am now collaborating with them to submit and publish the app on the Apple App Store. Potential features to add down the line:</p>
-                    <ol class="sevenplush-breakdown-text">
-                        <li>Automatically showing the day's schedule on launch of the app.</li>
-                        <li>App icon (artists, designers - <a href="mailto:sjoshi2019@k12.andoverma.us">send me your designs</a>!)</li>
-                        <li>H-Block software integration</li>
-                    </ol>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div id="sofs" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>Spoonful of Sarcasm<a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
+                <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="material-icon" aria-hidden="true">&times;</span></a>
+                <h5>Syntax Solutions</h5>
                 <div class="hr"></div>
-            </div>
-            <div class="modal-content">
-                <br>
-                <img src="img/portfolio/sofs.png" class="responsive-img">
-                <p>My band, Spoonful of Sarcasm, recently released our first album on all major platforms. As a result, we decided we wanted to get more serious about the band, and I created this website to create more publicity as well as allow people to book us to play gigs. Learn more about the band and see the website at <a href="http://spoonfulofsarcasm.tk" target="_blank">http://spoonfulofsarcasm.tk</a>.</p>
-            </div>
-        </div>
-        <div id="ss" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>Syntax Solutions<a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
-                <div class="hr"></div>
-            </div>
-            <div class="modal-content">
                 <br>
                 <img src="img/portfolio/ss.png" class="responsive-img">
                 <p>After having learnt the basics of HTML and CSS in a class freshman year, as well as having experimented with the languages because of my own curiosity, I founded business with my good friend <a href="https://rymcbr.github.io/web/">Ryan McBride</a>. We have been building websites for local businesses since 2015. Learn more at <a href="http://syntax-solutions.xyz" target="_blank">syntax-solutions.xyz</a>.</p>
             </div>
-        </div>
-        <div id="kec" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>Konjoian Education Center<a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
-                <div class="hr"></div>
-            </div>
-            <div class="modal-content">
-                <br>
-                <img src="img/portfolio/kec.png" class="responsive-img">
-                <p>The Konjoian Education Center is a local tutoring business working to aid students from both middle and high school in various subjects, such as math, science, history, and English. The company also offers test preparation and study skills programs. The Syntax Solutions team was brought on as interns to build the company a website, as they did not have one previously. Take a look at <a href="http://konjoianeducationcenter.com" target="_blank">konjoianeducationcenter.com</a>.</p>
-            </div>
-        </div>
-        <div id="mda" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>Matthew D. Allen 2048 - Campaign Site<a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
-                <div class="hr"></div>
-            </div>
-            <div class="modal-content">
-                <br>
-                <img src="img/portfolio/mdallen2048.png" class="responsive-img">
-                <p>Another good friend of mine, Matthew D. Allen, has an avid interest in politics. As he wishes to run for office some day, Ryan and I, as part of Syntax Solutions, built him a base website for his future endeavors. Check out the campaign website at <a href="http://matthewallen2048.github.io/election/" target="_blank">matthewallen2048.github.io/election/</a>.</p>
-            </div>
-        </div>
-        <div id="iamv" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>Indian Association of Merrimack Valley<a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
-                <div class="hr"></div>
-            </div>
-            <div class="modal-content">
-                <br>
-                <img src="img/portfolio/iamv.png" class="responsive-img">
-                <p>The Indian Association of Merrimack Valley is a group of Indian families living in the area that meet a few times a year to celebrate various Indian festivals. They also have a youth group, and as part of that group I helped in the process of obtaining feedback from their members regarding a new beta website. The new site is not fully live yet, but a beta can be seen at <a href="http://iamv.org/beta/" target="_blank">iamv.org/beta/</a>. Official site: <a href="http://iamv.org" target="_blank">iamv.org</a>.</p>
-            </div>
-        </div>
-        <div id="ace" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>Amaury Castillo Electric<a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
-                <div class="hr"></div>
-            </div>
-            <div class="modal-content">
-                <br>
-                <img src="img/portfolio/amaurycelectric.png" class="responsive-img">
-                <p>Amaury Castillo is an electrician based out of Lawrence, MA. He is licensed to for work in residential, commercial, and industrial spaces in both New Hampshire and Massachusetts, and asked us to build him a website in May of 2017. Find out more about his business at <a href="http://amaurycelectric.com" target="_blank">amaurycelectric.com</a>.</p>
-            </div>
-        </div>
-        <div id="kcs" class="modal modal-fixed-footer">
-            <div class="modal-header">
-                <h5>Keshia's Cleaning Services<a href="#!" class="modal-action modal-close right"><i class="material-icons black-text">close</i></a></h5>
-                <div class="hr"></div>
-            </div>
-            <div class="modal-content">
-                <br>
-                <img src="img/portfolio/keshiascleaningservices.png" class="responsive-img">
-                <p>Alongside Amaury's site, Ryan and I worked on a website for Keshia's Cleaning Services. Keshia, Amaury's wife, runs her own cleaning business, also located in Lawrence. She is available for hire in residential, commerical, and office buildings in the area. See more at <a href="http://keshiascleaningservices.com" target="_blank">keshiascleaningservices.com</a>.</p>
+            <div class="modal-footer">
+                
             </div>
         </div>
         <!--Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialboxed.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="js/init.js"></script>
     </body>
 </html>

@@ -22,15 +22,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-.button-collapse {
-    display: block !important;
-    position: absolute;
-    color: white;
-    padding: 15px;
-}
-.button-collapse i {
-    font-size: 35px !important;
-}
 .badge {
     border: 1px;
     border-style: solid;
@@ -158,21 +149,6 @@ h6 {
 main {
     flex: 1 0 auto;
 }
-.modal-header {
-    position: fixed;
-    top 0;
-    left: 0;
-    right: 0;
-    background: #fafafa;
-    z-index: 99;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
-.modal-content {
-    margin-top: 50px;
-}
 /* N */
 .nav-top {
     background: rgba(255,255,255,0);
@@ -229,15 +205,24 @@ p {
 /* R */
 
 /* S */
-.side-nav {
+.sidenav {
     width: 300px;
 }
-.side-nav li a{
+.sidenav li a{
     font-size: 16px !important;
     font-weight: 300;
 }
-.side-nav li {
+.sidenav li {
     height: auto;
+}
+.sidenav-trigger {
+    display: block !important;
+    position: absolute;
+    color: white;
+    padding: 15px;
+}
+.sidenav-trigger i {
+    font-size: 35px !important;
 }
 .skill-container {
     background: #eeeeee;
