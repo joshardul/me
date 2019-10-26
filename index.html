@@ -11,6 +11,22 @@
         <meta property="og:url" content="http://sharduljoshi.me">
         <meta property="og:title" content="Shardul Joshi">
         <meta property="og:type" content="website">
+        <script>
+            function make_visible(element_id)
+            {
+                var identifiers = ["unh-experience", "ss-experience", "rsm-experience", "kec-experience"];
+                var element = document.getElementById(element_id);
+                element.classList.remove("hide");
+                for (var i = 0; i < 4; i++)
+                {
+                    if (identifiers[i] != element_id)
+                    {
+                        element = document.getElementById(identifiers[i]);
+                        element.classList.add("hide");
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -79,98 +95,90 @@
                 </section>
                 <section id="experience" class="section scrollspy" style="margin-bottom: 20px">
                     <div class="row">
-                        <div class="col m4 s12 hide-on-med-and-up">
+                        <div class="col l4 s12">
                             <span class="section-header">Experience</span>
                             <div class="hr"></div>
-                            <p>Click on each of the circles at the bottom of the box below to learn about my various STEM-related roles.</p>
-                        </div>
-                        <div class="col m8 s12">
-                            <div class="carousel carousel-slider" data-indicators="true">
-                                <div class="carousel-item">
-                                    <br>
-                                    <h5 class="light">
-                                        UNH Tech Camp
-                                        <span class="right date-text align-center">
-                                            JUL 2019
-                                        </span>
-                                        <br>
-                                        <small>Durham, NH</small>
-                                    </h5>
-                                    <button class="badge teal-text">Tech Counselor</button>
-                                    <br><br>
-                                    <ul>
-                                        <li class="experience-info">Counselor at a STEM camp at the University of New Hampshire for students grades 8-12.</li>
-                                        <li class="experience-info">Aided students in various projects.</li>
-                                        <li class="experience-info">Overnight counselor as well for residential campers.</li>
-                                    </ul>
-                                </div>
-                                <div class="carousel-item">
-                                    <br>
-                                    <h5 class="light">
-                                        Syntax Solutions
-                                        <span class="right date-text align-center">
-                                            NOV 2015
-                                            <br><div class="divider divider-resume-date"></div>
-                                            Present
-                                        </span>
-                                        <br>
-                                        <small>Andover, MA</small>
-                                    </h5>
-                                    <button class="badge teal-text">Co-founder</button> <button class="badge teal-text">Web-developer</button>
-                                    <br><br>
-                                    <ul>
-                                        <li class="experience-info">Co-founded business with <a href="https://rymcbr.github.io/web/">Ryan McBride</a> in response to requests to build websites for various local businesses.</li>
-                                        <li class="experience-info">Website: <a href="http://syntax-solutions.xyz/">syntax-solutions.xyz/</a>.</li>
-                                        <li class="experience-info">Projects: <a href="http://keshiascleaningservices.com">keshiascleaningservices.com</a>, <a href="http://amaurycelectric.com">amaurycelectric.com</a>, <a href="https://matthewallen2048.github.io/election/">matthewallen2048.github.io/election/</a></li>
-                                    </ul>
-                                </div>
-                                <div class="carousel-item">
-                                    <br>
-                                    <h5 class="light">
-                                        Russian School of Mathematics
-                                        <span class="right date-text align-center">
-                                            SEPT 2017
-                                            <br><div class="divider divider-resume-date"></div>
-                                            JUN 2019
-                                        </span>
-                                        <br>
-                                        <small>Andover, MA</small>
-                                    </h5>
-                                    <button class="badge teal-text">Tutor</button>
-                                    <br><br>
-                                    <ul>
-                                        <li class="experience-info">Mathematics tutor for students grades 5-10.</li>
-                                        <li class="experience-info">Help students with math homework and concepts.</li>
-                                    </ul>
-                                </div>
-                                <div class="carousel-item">
-                                    <br>
-                                    <h5 class="light">
-                                        Konjoian Education Center
-                                        <span class="right date-text align-center">
-                                            SEPT 2016
-                                            <br><div class="divider divider-resume-date"></div>
-                                            NOV 2016
-                                        </span>
-                                        <br>
-                                        <small>Andover, MA (now North Andover, MA)</small>
-                                    </h5>
-                                    <button class="badge teal-text">Intern</button>
-                                    <br><br>
-                                    <ul>
-                                        <li class="experience-info">Gathered requirements, designed and built the center’s website.</li>
-                                        <li class="experience-info">Worked with the business manager to implement new technologies for the company, such as email and online scheduling.</li>
-                                        <li class="experience-info">Taught the staff how to use these new technologies.</li>
-                                        <li class="experience-info">Website: <a href="http://www.konjoianeducationcenter.com/">www.konjoianeducationcenter.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                             <br>
+                            <a onclick="make_visible('unh-experience')"><div class="chip white-text" style="background: #455A64">UNH Tech Camp</div></a><br class="hide-on-med-and-down">
+                            <a onclick="make_visible('ss-experience')"><div class="chip white-text" style="background: #455A64">Syntax Solutions</div></a><br class="hide-on-med-and-down">
+                            <a onclick="make_visible('rsm-experience')"><div class="chip white-text" style="background: #455A64">Russian School of Mathematics</div></a><br class="hide-on-med-and-down">
+                            <a onclick="make_visible('kec-experience')"><div class="chip white-text" style="background: #455A64">Konjoian Education Center</div></a>
                         </div>
-                        <div class="col m4 s12 hide-on-small-only">
-                            <span class="section-header">Experience</span>
-                            <div class="hr"></div>
-                            <p>Click on each of the circles at the bottom of the box on the left to learn about my various STEM-related roles.</p>
+                        <div class="col l8 s12">
+                            <div id="unh-experience" class="experience-info-block">
+                                <h5 class="light">
+                                    UNH Tech Camp
+                                    <span class="right date-text align-center">
+                                        JUL 2019
+                                    </span>
+                                    <br>
+                                    <small>Durham, NH</small>
+                                </h5>
+                                <button class="badge teal-text">Tech Counselor</button>
+                                <br><br>
+                                <ul>
+                                    <li class="experience-info">Counselor at a STEM camp at the University of New Hampshire for students grades 8-12.</li>
+                                    <li class="experience-info">Aided students in various projects.</li>
+                                    <li class="experience-info">Overnight counselor as well for residential campers.</li>
+                                </ul>
+                            </div>
+                            <div id="ss-experience" class="hide experience-info-block">
+                                <h5 class="light">
+                                    Syntax Solutions
+                                    <span class="right date-text align-center">
+                                        NOV 2015
+                                        <br><div class="divider divider-resume-date"></div>
+                                        Present
+                                    </span>
+                                    <br>
+                                    <small>Andover, MA</small>
+                                </h5>
+                                <button class="badge teal-text">Co-founder</button> <button class="badge teal-text">Web-developer</button>
+                                <br><br>
+                                <ul>
+                                    <li class="experience-info">Co-founded business with <a href="https://rymcbr.github.io/web/">Ryan McBride</a> in response to requests to build websites for various local businesses.</li>
+                                    <li class="experience-info">Website: <a href="http://syntax-solutions.xyz/">syntax-solutions.xyz/</a>.</li>
+                                    <li class="experience-info">Projects: <a href="http://keshiascleaningservices.com">keshiascleaningservices.com</a>, <a href="http://amaurycelectric.com">amaurycelectric.com</a>, <a href="https://matthewallen2048.github.io/election/">matthewallen2048.github.io/election/</a></li>
+                                </ul>
+                            </div>
+                            <div id="rsm-experience" class="hide experience-info-block">
+                                <h5 class="light">
+                                    Russian School of Mathematics
+                                    <span class="right date-text align-center">
+                                        SEPT 2017
+                                        <br><div class="divider divider-resume-date"></div>
+                                        JUN 2019
+                                    </span>
+                                    <br>
+                                    <small>Andover, MA</small>
+                                </h5>
+                                <button class="badge teal-text">Tutor</button>
+                                <br><br>
+                                <ul>
+                                    <li class="experience-info">Mathematics tutor for students grades 5-10.</li>
+                                    <li class="experience-info">Help students with math homework and concepts.</li>
+                                </ul>
+                            </div>
+                            <div id="kec-experience" class="hide experience-info-block">
+                                <h5 class="light">
+                                    Konjoian Education Center
+                                    <span class="right date-text align-center">
+                                        SEPT 2016
+                                        <br><div class="divider divider-resume-date"></div>
+                                        NOV 2016
+                                    </span>
+                                    <br>
+                                    <small>Andover, MA (now North Andover, MA)</small>
+                                </h5>
+                                <button class="badge teal-text">Intern</button>
+                                <br><br>
+                                <ul>
+                                    <li class="experience-info">Gathered requirements, designed and built the center’s website.</li>
+                                    <li class="experience-info">Worked with the business manager to implement new technologies for the company, such as email and online scheduling.</li>
+                                    <li class="experience-info">Taught the staff how to use these new technologies.</li>
+                                    <li class="experience-info">Website: <a href="http://www.konjoianeducationcenter.com/">www.konjoianeducationcenter.com</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>

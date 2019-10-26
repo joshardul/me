@@ -1,5 +1,5 @@
 /* Imports */
-@import 'https://fonts.googleapis.com/css?family=Slabo+27px';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&display=swap');
 /* # */
 
 /* A */
@@ -30,6 +30,11 @@ body {
 }
 .button-collapse i {
     font-size: 35px !important;
+}
+button.experience-button {
+    background: #455A64;
+    color: #fff;
+    
 }
 .badge {
     border: 1px;
@@ -90,13 +95,16 @@ body {
     font-size: 15px
 }
 /* E */
+.experience-info-block {
+    border: 3px solid #00695C;
+    border-radius: 10px;
+    padding: 10px;
+}
 .experience-info {
     padding-left: 20px;
 }
 /* F */
-footer {
-    
-}
+
 /* G */
 
 /* H */
