@@ -1,0 +1,105 @@
+/* Theme coloring classes */
+.bg-primary
+{
+    background: #00695C;
+    color: #fff;
+}
+.bg-secondary
+{
+    background: #00B8D4;
+    color: #fff;
+}
+.bg-primary *, .bg-secondary *
+{
+    color: #fff !important;
+}
+.text-primary
+{
+    color: #00695C !important;
+}
+.text-secondary
+{
+    color: #00B8D4 !important;
+}
+body
+{
+    background: #fcfcfc;
+}
+
+/* Text styling classes*/
+.indent
+{
+    text-indent: 30px;
+}
+.justify
+{
+    text-align: justify;
+}
+a
+{
+    color: #00B8D4;
+}
+a:hover
+{
+    color: #00B8D4;
+    text-decoration: underline;
+}
+
+/* Element positioning */
+.center-block
+{
+    display: block;
+    margin: auto;
+}
+
+/* Overriding/adding to UIKit CSS */
+.uk-subnav-pill .uk-active a
+{
+    background: #00B8D4;
+}
+.uk-tab-left .uk-active a
+{
+    border-color: #00B8D4;
+}
+a.uk-button.bg-secondary:hover
+{
+    background: #0097A7;
+}
+a.uk-button.bg-primary:hover
+{
+    background: #26A69A;
+}
+.uk-accordion-content
+{
+    border: 2px solid #666;
+    padding: 15px;
+}
+
+/* Custom elements */
+.content-switcher
+{
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.chip
+{
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+}
+footer
+{
+    margin-top: 30px;
+    border-top: 1px solid #e5e5e5;
+    padding: 30px;
+}
+footer h4
+{
+    color: #666;
+}
