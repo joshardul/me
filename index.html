@@ -11,12 +11,17 @@
         <link rel="stylesheet" href="stylesheets/main.css">
     </head>
     <body>
-        <img src="assets/images/boston.JPG" style="max-height: 450px; width: 100%;">
-        <header class="uk-section uk-section-primary bg-primary">
-            <div style="padding-left: 100px; padding-right: 100px; margin-top: -20px">
+        <div style="position: relative;">
+            <img src="assets/images/boston.JPG" style="max-height: 450px; width: 100%;">
+            <div style="position: absolute; bottom: -50px; width: 100%">
+                <img src="assets/images/SeniorPictureSquare.jpg" class="profile-pic center-block">
+            </div>
+        </div>
+        <header class="uk-section uk-section-primary bg-primary" style="padding-top: 55px;">
+            <div style="padding-left: 100px; padding-right: 100px;">
                 <h1 class="uk-text-center">shardul joshi</h1>
                 <hr>
-                <p style="font-size: 17px;" class="uk-text-center">RENSSELAER POLYTECHNIC INSTITUTE | COMPUTER SCIENCE</p>
+                <p style="font-size: 17px;" class="uk-text-center">RENSSELAER POLYTECHNIC INSTITUTE | COMPUTER SCIENCE<br><i>Seeking a Spring 2021 co-op in computer science and software engineering</i></p>
                 <div uk-grid>
                     <div class="uk-width-1-3@m"></div>
                     <div class="uk-width-1-3@m">
@@ -36,11 +41,12 @@
         <main class="uk-container">
             <br>
             <ul class="uk-subnav uk-subnav-pill" uk-switcher style="margin-bottom: -20px;" id="navigation">
-                <li><a href="#">About</a></li>
+                <li><a href="#">Intro</a></li>
                 <li><a href="#">Experience</a></li>
-                <li><a href="#">Education/Honors</a></li>
+                <li><a href="#">Education</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Activities</a></li>
+                <li><a href="#">Honors/Awards</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -48,7 +54,7 @@
             <hr>
             <ul class="uk-switcher content-switcher" style="">
                 <li class="uk-section" id="intro">
-                    <p class="indent justify">My name is Shardul Joshi and I am a first-year student at Rensselaer Polytechnic Institute studying computer science along with a minor in management (business). Being on an accelerated path, I will be participating in RPI's Arch program early. The Arch is a program that enables undergraduates to have an “away” experience during the school year, unlike students at other schools, who have to pursue such opportunities during the shorter summer breaks. To accomplish this, Rensselaer students take courses during the summer after their sophomore year, which replaces a semester during the following school year. My accelerated status means that although it is my first year, I am classified as a sophomore academically, and will therefore be taking my Arch summer semester this coming summer. This will lead to an “away” Spring 2021 semester, for which I am seeking a software engineering co-op. This semester, I have taken Data Structures and become very familiar with C++ and various types of data structures, both regarding their use and their implementations. Next semester, I will be taking Foundations of Computer Science and Computer Organization. Following that and prior to the start of a Spring 2021 co-op, I will have taken Introduction to Algorithms, Principles of Software, Graph Theory, Operating Systems, Programming Languages, and Database Systems. These classes will ensure that I am well-equipped with the technical knowledge necessary to be trusted with greater responsibilities in a co-op level position. I look forward to the prospects of making significant contributions in a Spring 2021 semester software engineering position.</p>
+                    <p class="indent justify">My name is Shardul Joshi and I am a first-year student at Rensselaer Polytechnic Institute studying computer science along with a minor in management (business). Being on an accelerated path, I will be participating in RPI's Arch program early. The Arch is a program that enables undergraduates to have an “away” experience during the school year, unlike students at other schools, who have to pursue such opportunities during the shorter summer breaks. To accomplish this, Rensselaer students take courses during the summer after their sophomore year to replace a semester during the following school year. My accelerated status means that although it is my first year, I am classified as a sophomore academically, and will therefore be taking my Arch summer semester this coming summer. This will lead to an “away” Spring 2021 semester, for which I am seeking a software engineering co-op. This semester, I have taken Data Structures and become very familiar with C++ and various types of data structures, both regarding their use and their implementations. Next semester, I will be taking Foundations of Computer Science and Computer Organization. Following that and prior to the start of a Spring 2021 co-op, I will have taken Introduction to Algorithms, Principles of Software, Graph Theory, Operating Systems, Programming Languages, and Database Systems. These classes will ensure that I am well-equipped with the technical knowledge necessary to be trusted with greater responsibilities in a co-op level position. I look forward to the prospects of making significant contributions in a Spring 2021 semester software engineering position.</p>
                 </li>
                 <li class="uk-section" id="experience">
                     <div uk-grid>
@@ -171,32 +177,11 @@
                             <img src="assets/images/rpi.png" height="50px" width="50px" class="center-block" style="margin-bottom: -20px;">
                             <h4 class="uk-text-center uk-margin-top-remove">Rensselaer Polytechnic Institute <br><small>Bachelors of Science, Computer science<br>Troy, NY</small><br><span class="bg-secondary uk-label" style="font-size: 18px;">2022</span></h4>
                             <p class="uk-text-center"><b>GPA:</b> 3.84/4<br>Additional minor in Management (business)<br>Notable courses include Data Structures, Foundations of Computer Science, Computer Organization, and Introduction to Management</p>
-                            <div uk-grid>
-                                <div class="uk-width-auto"></div>
-                                <div class="uk-width-expand">
-                                    <div uk-grid>
-                                        <div class="chip bg-primary center-block uk-width-auto">Rensselaer Leadership Award</div>
-                                        <div class="chip bg-primary center-block uk-width-auto">Rensselaer Recognition Award</div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="uk-width-1-2@m" style="padding-top: 15px; padding-bottom: 15px;">
                             <img src="assets/images/ahs.gif" width="85px" class="center-block" style="margin-bottom: -20px;">
                             <h4 class="uk-text-center uk-margin-top-remove">Andover High School <br><small>High school diploma<br>Andover, MA</small><br><span class="bg-secondary uk-label" style="font-size: 18px;">2019</span></h4>
                             <p class="uk-text-center"><b>GPA:</b> 3.87/4 (unweighted), 4.53/5 (weighted)<br>Honor roll<br>Top 10% of a 446-member graduating class</p>
-                            <div uk-grid>
-                                <div class="uk-width-auto"></div>
-                                <div class="uk-width-expand">
-                                    <div uk-grid>
-                                        <div class="chip bg-primary center-block uk-width-auto">National Honors Society</div>
-                                        <div class="chip bg-primary center-block uk-width-auto">National AP Scholar</div>
-                                        <div class="chip bg-primary center-block uk-width-auto">AP Scholar with Distinction</div>
-                                        <div class="chip bg-primary center-block uk-width-auto">Excellence in Java Programming</div>
-                                        <div class="chip bg-primary center-block uk-width-auto">MA State Seal of Biliteracy</div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -205,19 +190,43 @@
                         <div class="uk-width-1-3@m">
                             <ul class="uk-list uk-list-divider">
                                 <li class="uk-text-center"><b>Technical</b></li>
-                                <li class="uk-text-center">Python, Java, Swift, C, C++, HTML, CSS, JavaScript, Git, web/mobile app development, data structures</li>
+                                <li class="uk-text-center" style="line-height: 35px;">
+                                    <span class="chip bg-primary">Python</span>
+                                    <span class="chip bg-primary">Java</span>
+                                    <span class="chip bg-primary">Swift</span>
+                                    <span class="chip bg-primary">C</span>
+                                    <span class="chip bg-primary">C++</span>
+                                    <span class="chip bg-primary">HTML</span>
+                                    <span class="chip bg-primary">CSS</span>
+                                    <span class="chip bg-primary">JavaScript</span>
+                                    <span class="chip bg-primary">Git</span>
+                                    <span class="chip bg-primary">web/mobile app development</span>
+                                    <span class="chip bg-primary">data structures</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="uk-width-1-3@m">
                             <ul class="uk-list uk-list-divider">
                                 <li class="uk-text-center"><b>Soft</b></li>
-                                <li class="uk-text-center">writing, organization, team leadership, project management, team building, project planning, public speaking</li>
+                                <li class="uk-text-center" style="line-height: 35px;">
+                                    <span class="chip bg-primary">writing</span>
+                                    <span class="chip bg-primary">organization</span>
+                                    <span class="chip bg-primary">team leadership</span>
+                                    <span class="chip bg-primary">project management</span>
+                                    <span class="chip bg-primary">team building</span>
+                                    <span class="chip bg-primary">project planning</span>
+                                    <span class="chip bg-primary">public speaking</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="uk-width-1-3@m">
                             <ul class="uk-list uk-list-divider">
                                 <li class="uk-text-center"><b>Languages</b></li>
-                                <li class="uk-text-center">English, Spanish, Marathi</li>
+                                <li class="uk-text-center" style="line-height: 35px;">
+                                    <span class="chip bg-primary">English</span>
+                                    <span class="chip bg-primary">Spanish</span>
+                                    <span class="chip bg-primary">Marathi</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -227,7 +236,7 @@
                         <li class="uk-open">
                             <a class="uk-accordion-title" href="#">The <i>Polytechnic</i></a>
                             <div class="uk-accordion-content">
-                                <p>The <i>Polytechnic</i> is the online school newspaper of RPI. It can be found at <a href="https://poly.rpi.edu">poly.rpi.edu</a>. We help keep the student body informed of campus news by covering events, conducting interviews, and more. Additionally, staff and general public can write opinion pieces to express arguments that they feel are important. We have several departments: News, Features, Editorial/Opinion, Sports, Photo, Publicity, and Copy. Elections for voting member positions are done at the end of each semester for the following one. In recent years, I began to enjoy writing, but I find that I consider other subject priorities. At a STEM school where the humanities are less emphasized, I knew I would not pursue them in a classroom setting, so I wanted to find a way to keep up my writing otherwise. The <i>Poly</i>, for short, provided me with that opportunity, as well as introduced me to a great group of people who shared my combined interest in both technology and writing.</p>
+                                <p class="justify">The <i>Polytechnic</i>, or the <i>Poly</i>, for short, is the online school newspaper of RPI, found at <a href="https://poly.rpi.edu">poly.rpi.edu</a>. We help keep the student body informed of campus news by covering events, conducting interviews, and more. Additionally, staff and general public can write opinion pieces to express arguments that they feel are important. We have several departments: News, Features, Editorial/Opinion, Sports, Photo, Publicity, and Copy. Elections for voting member positions are done at the end of each semester for the following one. Joining the <i>Poly</i> has been a great decision for me. I have began to enjoy writing in recent years, but I still find that I consider other subject priorities. At a STEM school where the humanities are less emphasized, I knew I would not pursue them in a classroom setting, so I wanted to find a way to keep up my writing. The <i>Poly</i> provided me with that opportunity, as well as introduced me to a great group of people who shared my combined interest in both technology and writing.</p>
                                 <table class="uk-table uk-table-divider">
                                     <thead>
                                         <tr>
@@ -251,7 +260,7 @@
                         <li>
                             <a class="uk-accordion-title" href="#">Spoonful of Sarcasm</a>
                             <div class="uk-accordion-content">
-                                <p>I have been playing guitar since 6th grade, having taken lessons since then until I left for college this past school year. In freshman year of high school, a group of friends and I decided to join an ensemble at our common music school, which was organizing these small bands and providing them space to practice and and mentor. This group of 5 grew closer over the years, and we began to play more and more often, and for more and more public audiences. Eventually, we were writing our own songs, and have even published a few on the major streaming services, such as Spotify and Apple Music.</p>
+                                <p class="justify">I have been playing guitar since 6th grade, having taken lessons since then until I left for college this past school year. In freshman year of high school, a group of friends and I decided to join an ensemble at our common music school, which was organizing these small bands and providing them space to practice and and mentor. This group of 5 grew closer over the years, and we began to play more and more often, and for more and more public audiences. We have played at the Hard Rock Cafe (Boston), Harvard Stadium, Gillette Stadium, and many open mic nights in our local area. We have also played live on WEMF Radio. Eventually, we were writing our own songs, too, and have even published a few on all major streaming services, such as <a href="https://open.spotify.com/artist/0tZWPXIaNA3yNrekm7xJPB?si=fxS7-iREQO2z1iU_1j3oIQ">Spotify</a> and <a href="https://music.apple.com/us/artist/spoonful-of-sarcasm/1406403423">Apple Music</a>. Learn more about us at <a href="http://spoonfulofsarcasm.tk">spoonfulofsarcasm.tk</a>.</p> 
                                 <table class="uk-table uk-table-divider">
                                     <thead>
                                         <tr>
@@ -271,7 +280,7 @@
                         <li>
                             <a class="uk-accordion-title" href="#">Cross country (high school)</a>
                             <div class="uk-accordion-content">
-                                <p>In the days leading up to the start of high school, excitedly, I tried out for the freshman soccer team. With limited experience in soccer, unsurprisingly, I did not qualify for the team. In retrospect, getting cut from that team worked in my favor; two days later, crestfallen and rather reluctantly, I joined the cross-country team. When my dad dropped me off at the first practice, I fully expected to hate the sport and quit the very next day. I could not have been more wrong – I ran three miles that day and quickly became captivated with the runner’s high. Over the next four seasons, I made great friendships and found a strong comraderie in the team that I thoroughly enjoyed being a part of. I was not very good, but I kept running and was even elected captain at the end of my junior year, giving me the opportunity to do for the new freshman what previous captains had done for me.</p>
+                                <p class="justify">In the days leading up to the start of high school, excitedly, I tried out for the freshman soccer team. With limited experience in soccer, unsurprisingly, I did not qualify for the team. In retrospect, getting cut from that team worked in my favor; two days later, crestfallen and rather reluctantly, I joined the cross-country team. When my dad dropped me off at the first practice, I fully expected to hate the sport and quit the very next day. I could not have been more wrong – I ran three miles that day and quickly became captivated with the runner’s high. Over the next four seasons, I made great friendships and found a strong comraderie in the team that I thoroughly enjoyed being a part of. I was not very good, but I kept running and was even elected captain at the end of my junior year, giving me the opportunity to do for the new freshman what previous captains had done for me.</p>
                                 <table class="uk-table uk-table-divider">
                                     <thead>
                                         <tr>
@@ -295,7 +304,7 @@
                         <li>
                             <a class="uk-accordion-title" href="#">Computer Science Club (high school)</a>
                             <div class="uk-accordion-content">
-                                <p>Our computer science club in high school met weekly for many various activities. Sometimes it was taking the tests for the American Computer Science League or preparing for them. Other times we each worked on our own computer science projects, personal or academic, helping each other with bugs. A few times we also took it upon ourselves to learn something new together, from a new language to how to tackle a certain challenge. We even spent some meetings brainstorming potential ideas for projects we would want to do sometime, and thought of the various technologies we would need to complete it. We also participated as a team in cybersecurity capture-the-flags, programming competitions, and hackathons. It was a very small club, with no leadership positions.</p>
+                                <p class="justify">Our computer science club in high school met weekly for many various activities. Sometimes it was taking the tests for the <a href="http://www.acsl.org">American Computer Science League</a> competition or preparing for them. Other times we each worked on our own computer science projects, personal or academic, helping each other with bugs. A few times we also took it upon ourselves to learn something new together, from a new language to how to tackle a certain challenge. We even spent some meetings brainstorming potential ideas for projects we would want to do sometime, and thought of the various technologies we would need to complete it. We also participated as a team in cybersecurity capture-the-flags, programming competitions, and hackathons. It was a very small club, with no leadership positions.</p>
                                 <table class="uk-table uk-table-divider">
                                     <thead>
                                         <tr>
@@ -315,7 +324,7 @@
                         <li>
                             <a class="uk-accordion-title" href="#">Science Team (high school)</a>
                             <div class="uk-accordion-content">
-                                <p>Description</p>
+                                <p class="justify">At the beginning of my junior year, my friend, who was captain of our school's science team, encouraged me to join the team. The team was part of the <a href="https://sites.google.com/site/northshorescienceleague/">North Shore Science League</a>, which was made up of teams from about 20 high schools and held monthly meets throughout the school year. Three different events occurred at each meet, and each school team could send up to three four-person groups to each event – A, B, and C teams. Only the A team would score for the school in the event. Whichever school scored the most points across all three events would win the meet, and at the end of the school year, the schools would be ranked for an overall year's awards. After attending my first meet, my event team, which was the A-team for my school for the event, placed very high, missing first place by just a few points. Throughout the year, I continued to contribute in whatever way I could to help the team ultimately place third at the end of the year. The team leadership and teacher advisors then encouraged me to apply for a leadership position for the following school year, for which they then selected me from the pool of applicants. As Logistics Coordinator, I was in charge of managing funds, obtaining materials for our various events, and team purchases (food, materials, etc.). I held this position for my senior year, and we placed third in the league once again at the end of the year.</p>
                                 <table class="uk-table uk-table-divider">
                                     <thead>
                                         <tr>
@@ -338,17 +347,60 @@
                         </li>
                     </ul>
                 </li>
+                <li class="uk-section" id="honors">
+                    <table class="uk-table uk-table-divider">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Level of recognition</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>National AP Scholar</td>
+                                <td>High school, State, National</td>
+                                <td>Jul 2019</td>
+                            </tr>
+                            <tr>
+                                <td>AP Scholar with Distinction</td>
+                                <td>High school, State, National</td>
+                                <td>Jul 2019</td>
+                            </tr>
+                            <tr>
+                                <td>MA Seal of Biliteracy</td>
+                                <td>High school, State</td>
+                                <td>Jun 2019</td>
+                            </tr>
+                            <tr>
+                                <td>Rensselaer Recognition Award</td>
+                                <td>College</td>
+                                <td>May 2019</td>
+                            </tr>
+                            <tr>
+                                <td>Rensselaer Leadership Award</td>
+                                <td>College</td>
+                                <td>Mar 2019</td>
+                            </tr>
+                            <tr>
+                                <td>National Honor Society</td>
+                                <td>High school, State, National</td>
+                                <td>Nov 2017+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
                 <li class="uk-section" id="resume">
                     <h3 class="uk-text-center">Resume viewing formats</h3>
                     <p class="uk-text-center">View my resume in multiple formats: a black and white PDF, a colorful PDF, or an HTML page</p>
                     <div uk-grid>
-                        <div class="uk-width-1-3">
+                        <div class="uk-width-1-3@m">
                             <a class="center-block uk-button uk-button-secondary" href="assets/pdfs/resume_shardul_joshi.pdf"><span uk-icon="file-pdf"></span> PDF - black and white</a>
                         </div>
-                        <div class="uk-width-1-3">
+                        <div class="uk-width-1-3@m">
                             <a class="center-block uk-button uk-button-primary bg-secondary" href="assets/pdfs/resume_shardul_joshi_color.pdf"><span uk-icon="file-pdf"></span> PDF - color</a>
                         </div>
-                        <div class="uk-width-1-3">
+                        <div class="uk-width-1-3@m">
                             <a class="center-block uk-button uk-button-primary bg-primary" href="resume.html"><span uk-icon="code"></span> HTML</a>
                         </div>
                     </div>
@@ -367,12 +419,12 @@
                 <div class="uk-width-1-3"><h4 class="uk-text-center" style="margin-top: 8px;">Made using <a>UIKit</a></h4></div>
                 <div class="uk-width-1-3">
                     <ul class="uk-iconnav" uk-grid>
-                        <li class="uk-width-1-6 uk-text-center"><a href="www.linkedin.com/in/sjoshi01" uk-icon="icon: linkedin; ratio: 2" uk-tooltip="title: LinkedIn: Shardul Joshi; pos: bottom"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="mailto:joshardul@gmail.com" uk-icon="icon: mail; ratio: 2" uk-tooltip="title: Email: joshardul@gmail.com; pos: bottom"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="tel:+16034942452" uk-icon="icon: receiver; ratio: 2" uk-tooltip="title: Phone: (603) 494-2452; pos: bottom"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="https://github.com/joshardul" uk-icon="icon: github; ratio: 2" uk-tooltip="title: Github: @joshardul; pos: bottom"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="https://www.facebook.com/shardul.joshi.167" uk-icon="icon: facebook; ratio: 2" uk-tooltip="title: Facebook: Shardul Joshi; pos: bottom"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="https://www.instagram.com/joshi_shardul/" uk-icon="icon: instagram; ratio: 2" uk-tooltip="title: Instagram: @joshi_shardul; pos: bottom"></a></li>
+                        <li class="uk-width-1-6 uk-text-center"><a href="www.linkedin.com/in/sjoshi01" uk-icon="icon: linkedin; ratio: 2" uk-tooltip="title: LinkedIn: Shardul Joshi; pos: top"></a></li>
+                        <li class="uk-width-1-6 uk-text-center"><a href="mailto:joshardul@gmail.com" uk-icon="icon: mail; ratio: 2" uk-tooltip="title: Email: joshardul@gmail.com; pos: top"></a></li>
+                        <li class="uk-width-1-6 uk-text-center"><a href="tel:+16034942452" uk-icon="icon: receiver; ratio: 2" uk-tooltip="title: Phone: (603) 494-2452; pos: top"></a></li>
+                        <li class="uk-width-1-6 uk-text-center"><a href="https://github.com/joshardul" uk-icon="icon: github; ratio: 2" uk-tooltip="title: Github: @joshardul; pos: top"></a></li>
+                        <li class="uk-width-1-6 uk-text-center"><a href="https://www.facebook.com/shardul.joshi.167" uk-icon="icon: facebook; ratio: 2" uk-tooltip="title: Facebook: Shardul Joshi; pos: top"></a></li>
+                        <li class="uk-width-1-6 uk-text-center"><a href="https://www.instagram.com/joshi_shardul/" uk-icon="icon: instagram; ratio: 2" uk-tooltip="title: Instagram: @joshi_shardul; pos: top"></a></li>
                     </ul>
                 </div>
                 <div class="uk-width-1-3"><h4 class="uk-text-center" style="margin-top: 8px"><a>Syntax<b>Solutions</b></a></h4></div>
