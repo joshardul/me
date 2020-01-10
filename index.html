@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/SeniorPictureSquare.jpg">
+        <!-- Title-->
         <title>Shardul Joshi</title>
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
@@ -21,17 +24,16 @@
             <div style="padding-left: 100px; padding-right: 100px;">
                 <h1 class="uk-text-center">shardul joshi</h1>
                 <hr>
-                <p style="font-size: 17px;" class="uk-text-center">RENSSELAER POLYTECHNIC INSTITUTE | COMPUTER SCIENCE<br><i>Seeking a Spring 2021 co-op in computer science and software engineering</i></p>
+                <p style="font-size: 17px;" class="uk-text-center"><span class="uk-text-uppercase">Rensselaer Polytechnic Institute | Computer Science</span><br><i>Seeking a Spring 2021 co-op in computer science and software engineering</i></p>
                 <div uk-grid>
                     <div class="uk-width-1-3@m"></div>
                     <div class="uk-width-1-3@m">
                         <ul class="uk-iconnav" uk-grid>
-                            <li class="uk-width-1-6 uk-text-center"><a href="www.linkedin.com/in/sjoshi01" uk-icon="icon: linkedin; ratio: 2" uk-tooltip="title: LinkedIn: Shardul Joshi; pos: bottom"></a></li>
-                            <li class="uk-width-1-6 uk-text-center"><a href="mailto:joshardul@gmail.com" uk-icon="icon: mail; ratio: 2" uk-tooltip="title: Email: joshardul@gmail.com; pos: bottom"></a></li>
-                            <li class="uk-width-1-6 uk-text-center"><a href="tel:+16034942452" uk-icon="icon: receiver; ratio: 2" uk-tooltip="title: Phone: (603) 494-2452; pos: bottom"></a></li>
-                            <li class="uk-width-1-6 uk-text-center"><a href="https://github.com/joshardul" uk-icon="icon: github; ratio: 2" uk-tooltip="title: Github: @joshardul; pos: bottom"></a></li>
-                            <li class="uk-width-1-6 uk-text-center"><a href="https://www.facebook.com/shardul.joshi.167" uk-icon="icon: facebook; ratio: 2" uk-tooltip="title: Facebook: Shardul Joshi; pos: bottom"></a></li>
-                            <li class="uk-width-1-6 uk-text-center"><a href="https://www.instagram.com/joshi_shardul/" uk-icon="icon: instagram; ratio: 2" uk-tooltip="title: Instagram: @joshi_shardul; pos: bottom"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="www.linkedin.com/in/sjoshi01" uk-icon="icon: linkedin; ratio: 2" uk-tooltip="title: LinkedIn: Shardul Joshi; pos: bottom"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="mailto:joshardul@gmail.com" uk-icon="icon: mail; ratio: 2" uk-tooltip="title: Email: joshardul@gmail.com; pos: bottom"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="tel:+16034942452" uk-icon="icon: receiver; ratio: 2" uk-tooltip="title: Phone: (603) 494-2452; pos: bottom"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="https://github.com/joshardul" uk-icon="icon: github; ratio: 2" uk-tooltip="title: Github: @joshardul; pos: bottom"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="" uk-icon="icon: file-text; ratio: 2" uk-tooltip="title: View my resume; pos: bottom"></a></li>
                         </ul>
                     </div>
                     <div class="uk-width-1-3@m"></div>
@@ -39,7 +41,6 @@
             </div>
         </header>
         <main class="uk-container">
-            <br>
             <ul class="uk-subnav uk-subnav-pill" uk-switcher style="margin-bottom: -20px;" id="navigation">
                 <li><a href="#">Intro</a></li>
                 <li><a href="#">Experience</a></li>
@@ -47,7 +48,6 @@
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Activities</a></li>
                 <li><a href="#">Honors/Awards</a></li>
-                <li><a href="#">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <br>
@@ -58,116 +58,100 @@
                 </li>
                 <li class="uk-section" id="experience">
                     <div uk-grid>
-                        <div class="uk-width-auto@m">
-                            <ul class="uk-tab-left" uk-tab="connect: #component-tab-left">
-                                <li><a href="#">Syntax Solutions</a></li>
-                                <li><a href="#">UNH Tech Camp</a></li>
-                                <li><a href="#">RSM</a></li>
-                                <li><a href="#">iOS App for AHS</a></li>
-                                <li><a href="#">TYE</a></li>
-                                <li><a href="#">IAMV</a></li>
-                                <li><a href="#">KEC</a></li>
+                        <div class="uk-width-1-5@m">
+                            <ul class="uk-nav uk-nav-default experience-nav-side uk-text-uppercase uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true" uk-sticky="bottom: true; offset: 50px">
+                                <li><a href="#ss">Syntax Solutions</a></li>
+                                <li><a href="#unh">UNH Tech Camp</a></li>
+                                <li><a href="#rsm">RSM</a></li>
+                                <li><a href="#sevenplush">iOS App for AHS</a></li>
+                                <li><a href="#tye">TYE</a></li>
+                                <li><a href="#iamv">IAMV</a></li>
+                                <li><a href="#kec">KEC</a></li>
                             </ul>
                         </div>
                         <div class="uk-width-expand@m">
-                            <ul id="component-tab-left" class="uk-switcher">
-                                <li>
-                                    <div class="uk-card uk-card-default" id="ss">
-                                        <div class="uk-card-header">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Syntax Solutions</h3>
-                                            <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA | Nov 2015 – present | <i>Co-founder/web-developer</i></p>
-                                        </div>
-                                        <div class="uk-card-body" style="padding-top: 15px;">
-                                            <ul>
-                                                <li>Co-founded a business to address growing need from various local businesses to build an online presence</li>
-                                                <li>Portfolio of multiple, completed projects available at <a href="http://syntax-solutions.xyz/">syntax-solutions.xyz</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default" id="unh">
-                                        <div class="uk-card-header">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom text-primary">University of New Hampshire Tech Camp</h3>
-                                            <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Durham, NH | Jul 2019 | <i>Tech camp counselor (day and night)</i></p>
-                                        </div>
-                                        <div class="uk-card-body" style="padding-top: 15px;">
-                                            <ul>
-                                                <li>Counseled students (grades 8-12) at a STEM camp at the University of New Hampshire</li>
-                                                <li>Aided students in various projects, including introductions to programming</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default" id="rsm">
-                                        <div class="uk-card-header">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Russian School of Mathematics</h3>
-                                            <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA | Sep 2017 – June 2019 | <i>Tutor</i></p>
-                                        </div>
-                                        <div class="uk-card-body" style="padding-top: 15px;">
-                                            <ul>
-                                                <li>Tutored students from grades 5-10 in mathematics by helping with math homework and concepts</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default" id="sevenplush">
-                                        <div class="uk-card-header">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom text-primary">iOS App for Andover High School</h3>
-                                            <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA | Jul 2018 | <i>Position</i></p>
-                                        </div>
-                                        <div class="uk-card-body" style="padding-top: 15px;">
-                                            <ul>
-                                                <li>Independently developed iOS app for students to keep track of 8-day rotation</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default" id="tye">
-                                        <div class="uk-card-header">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom text-primary">TiE Boston Young Entrepreneurs</h3>
-                                            <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Boston, MA | Sep 2017 – Apr 2018 | <i>CTO of team of 5</i></p>
-                                        </div>
-                                        <div class="uk-card-body" style="padding-top: 15px;">
-                                            <ul>
-                                                <li>Attended meetings every other Saturday from September 2017 to April 2018 culminating in a business plan competition judged by a panel of venture capitalists</li>
-                                                <li>Learned from real-world entrepreneurs about various aspects of running a startup (research, marketing, finance, prototyping, presentation, teamwork, and other interpersonal skills)</li>
-                                                <li>Conceived, designed, and proposed, with early prototypes, a software to automate recommendations for teachers that suggest specific extra-help content catered to individual student needs</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default" id="iamv">
-                                        <div class="uk-card-header">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Indian Association of Merrimack Valley</h3>
-                                            <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">MA | Jul 2017 | <i>Requirements consultant: voice of customer (volunteer)</i></p>
-                                        </div>
-                                        <div class="uk-card-body" style="padding-top: 15px;">
-                                            <ul>
-                                                <li>Interviewed the various board members of the Indian Association of Merrimack Valley (IAMV), gathering requirements and feedback for a beta website (<a href="http://iamv.org/">iamv.org</a>) for the organization to later relay that information to an overseas development team</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default" id="kec">
-                                        <div class="uk-card-header">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Konjoian Education Center</h3>
-                                            <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA (Now located in North Andover, MA) | Sep 2016 - Nov 2016 | <i>Intern</i></p>
-                                        </div>
-                                        <div class="uk-card-body" style="padding-top: 15px;">
-                                            <ul>
-                                                <li>Gathered requirements, designed and built the center’s website: <a href="http://www.konjoianeducationcenter.com/">www.konjoianeducationcenter.com</a></li>
-                                                <li>Worked with business manager to implement new technologies for the company, such as email and online scheduling, and taught the staff how to use these technologies </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="uk-card uk-card-default" id="ss">
+                                <div class="uk-card-header">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Syntax Solutions</h3>
+                                    <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA | Nov 2015 – present | <i>Co-founder/web-developer</i></p>
+                                </div>
+                                <div class="uk-card-body" style="padding-top: 15px;">
+                                    <ul>
+                                        <li>Co-founded a business to address growing need from various local businesses to build an online presence</li>
+                                        <li>Portfolio of multiple, completed projects available at <a href="http://syntax-solutions.xyz/">syntax-solutions.xyz</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-card uk-card-default" id="unh">
+                                <div class="uk-card-header">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom text-primary">University of New Hampshire Tech Camp</h3>
+                                    <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Durham, NH | Jul 2019 | <i>Tech camp counselor (day and night)</i></p>
+                                </div>
+                                <div class="uk-card-body" style="padding-top: 15px;">
+                                    <ul>
+                                        <li>Counseled students (grades 8-12) at a STEM camp at the University of New Hampshire</li>
+                                        <li>Aided students in various projects, including introductions to programming</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-card uk-card-default" id="rsm">
+                                <div class="uk-card-header">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Russian School of Mathematics</h3>
+                                    <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA | Sep 2017 – June 2019 | <i>Tutor</i></p>
+                                </div>
+                                <div class="uk-card-body" style="padding-top: 15px;">
+                                    <ul>
+                                        <li>Tutored students from grades 5-10 in mathematics by helping with math homework and concepts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-card uk-card-default" id="sevenplush">
+                                <div class="uk-card-header">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom text-primary">iOS App for Andover High School</h3>
+                                    <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA | Jul 2018 | <i>Position</i></p>
+                                </div>
+                                <div class="uk-card-body" style="padding-top: 15px;">
+                                    <ul>
+                                        <li>Independently developed iOS app for students to keep track of 8-day rotation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-card uk-card-default" id="tye">
+                                <div class="uk-card-header">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom text-primary">TiE Boston Young Entrepreneurs</h3>
+                                    <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Boston, MA | Sep 2017 – Apr 2018 | <i>CTO of team of 5</i></p>
+                                </div>
+                                <div class="uk-card-body" style="padding-top: 15px;">
+                                    <ul>
+                                        <li>Attended meetings every other Saturday from September 2017 to April 2018 culminating in a business plan competition judged by a panel of venture capitalists</li>
+                                        <li>Learned from real-world entrepreneurs about various aspects of running a startup (research, marketing, finance, prototyping, presentation, teamwork, and other interpersonal skills)</li>
+                                        <li>Conceived, designed, and proposed, with early prototypes, a software to automate recommendations for teachers that suggest specific extra-help content catered to individual student needs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-card uk-card-default" id="iamv">
+                                <div class="uk-card-header">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Indian Association of Merrimack Valley</h3>
+                                    <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">MA | Jul 2017 | <i>Requirements consultant: voice of customer (volunteer)</i></p>
+                                </div>
+                                <div class="uk-card-body" style="padding-top: 15px;">
+                                    <ul>
+                                        <li>Interviewed the various board members of the Indian Association of Merrimack Valley (IAMV), gathering requirements and feedback for a beta website (<a href="http://iamv.org/">iamv.org</a>) for the organization to later relay that information to an overseas development team</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-card uk-card-default" id="kec">
+                                <div class="uk-card-header">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom text-primary">Konjoian Education Center</h3>
+                                    <p style="font-size: 15px;" class="uk-text-meta uk-margin-remove-top">Andover, MA (Now located in North Andover, MA) | Sep 2016 - Nov 2016 | <i>Intern</i></p>
+                                </div>
+                                <div class="uk-card-body" style="padding-top: 15px;">
+                                    <ul>
+                                        <li>Gathered requirements, designed and built the center’s website: <a href="http://www.konjoianeducationcenter.com/">www.konjoianeducationcenter.com</a></li>
+                                        <li>Worked with business manager to implement new technologies for the company, such as email and online scheduling, and taught the staff how to use these technologies </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -234,7 +218,7 @@
                 <li class="uk-section" id="activities">
                     <ul uk-accordion>
                         <li class="uk-open">
-                            <a class="uk-accordion-title" href="#">The <i>Polytechnic</i></a>
+                            <a class="uk-accordion-title" href="#">The <i>Polytechnic</i> <small>(school newspaper)</small></a>
                             <div class="uk-accordion-content">
                                 <p class="justify">The <i>Polytechnic</i>, or the <i>Poly</i>, for short, is the online school newspaper of RPI, found at <a href="https://poly.rpi.edu">poly.rpi.edu</a>. We help keep the student body informed of campus news by covering events, conducting interviews, and more. Additionally, staff and general public can write opinion pieces to express arguments that they feel are important. We have several departments: News, Features, Editorial/Opinion, Sports, Photo, Publicity, and Copy. Elections for voting member positions are done at the end of each semester for the following one. Joining the <i>Poly</i> has been a great decision for me. I have began to enjoy writing in recent years, but I still find that I consider other subject priorities. At a STEM school where the humanities are less emphasized, I knew I would not pursue them in a classroom setting, so I wanted to find a way to keep up my writing. The <i>Poly</i> provided me with that opportunity, as well as introduced me to a great group of people who shared my combined interest in both technology and writing.</p>
                                 <table class="uk-table uk-table-divider">
@@ -278,7 +262,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Cross country (high school)</a>
+                            <a class="uk-accordion-title" href="#">Cross country <small>(high school)</small></a>
                             <div class="uk-accordion-content">
                                 <p class="justify">In the days leading up to the start of high school, excitedly, I tried out for the freshman soccer team. With limited experience in soccer, unsurprisingly, I did not qualify for the team. In retrospect, getting cut from that team worked in my favor; two days later, crestfallen and rather reluctantly, I joined the cross-country team. When my dad dropped me off at the first practice, I fully expected to hate the sport and quit the very next day. I could not have been more wrong – I ran three miles that day and quickly became captivated with the runner’s high. Over the next four seasons, I made great friendships and found a strong comraderie in the team that I thoroughly enjoyed being a part of. I was not very good, but I kept running and was even elected captain at the end of my junior year, giving me the opportunity to do for the new freshman what previous captains had done for me.</p>
                                 <table class="uk-table uk-table-divider">
@@ -302,7 +286,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Computer Science Club (high school)</a>
+                            <a class="uk-accordion-title" href="#">Computer Science Club <small>(high school)</small></a>
                             <div class="uk-accordion-content">
                                 <p class="justify">Our computer science club in high school met weekly for many various activities. Sometimes it was taking the tests for the <a href="http://www.acsl.org">American Computer Science League</a> competition or preparing for them. Other times we each worked on our own computer science projects, personal or academic, helping each other with bugs. A few times we also took it upon ourselves to learn something new together, from a new language to how to tackle a certain challenge. We even spent some meetings brainstorming potential ideas for projects we would want to do sometime, and thought of the various technologies we would need to complete it. We also participated as a team in cybersecurity capture-the-flags, programming competitions, and hackathons. It was a very small club, with no leadership positions.</p>
                                 <table class="uk-table uk-table-divider">
@@ -322,7 +306,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Science Team (high school)</a>
+                            <a class="uk-accordion-title" href="#">Science Team <small>(high school)</small></a>
                             <div class="uk-accordion-content">
                                 <p class="justify">At the beginning of my junior year, my friend, who was captain of our school's science team, encouraged me to join the team. The team was part of the <a href="https://sites.google.com/site/northshorescienceleague/">North Shore Science League</a>, which was made up of teams from about 20 high schools and held monthly meets throughout the school year. Three different events occurred at each meet, and each school team could send up to three four-person groups to each event – A, B, and C teams. Only the A team would score for the school in the event. Whichever school scored the most points across all three events would win the meet, and at the end of the school year, the schools would be ranked for an overall year's awards. After attending my first meet, my event team, which was the A-team for my school for the event, placed very high, missing first place by just a few points. Throughout the year, I continued to contribute in whatever way I could to help the team ultimately place third at the end of the year. The team leadership and teacher advisors then encouraged me to apply for a leadership position for the following school year, for which they then selected me from the pool of applicants. As Logistics Coordinator, I was in charge of managing funds, obtaining materials for our various events, and team purchases (food, materials, etc.). I held this position for my senior year, and we placed third in the league once again at the end of the year.</p>
                                 <table class="uk-table uk-table-divider">
@@ -390,21 +374,6 @@
                         </tbody>
                     </table>
                 </li>
-                <li class="uk-section" id="resume">
-                    <h3 class="uk-text-center">Resume viewing formats</h3>
-                    <p class="uk-text-center">View my resume in multiple formats: a black and white PDF, a colorful PDF, or an HTML page</p>
-                    <div uk-grid>
-                        <div class="uk-width-1-3@m">
-                            <a class="center-block uk-button uk-button-secondary" href="assets/pdfs/resume_shardul_joshi.pdf"><span uk-icon="file-pdf"></span> PDF - black and white</a>
-                        </div>
-                        <div class="uk-width-1-3@m">
-                            <a class="center-block uk-button uk-button-primary bg-secondary" href="assets/pdfs/resume_shardul_joshi_color.pdf"><span uk-icon="file-pdf"></span> PDF - color</a>
-                        </div>
-                        <div class="uk-width-1-3@m">
-                            <a class="center-block uk-button uk-button-primary bg-primary" href="resume.html"><span uk-icon="code"></span> HTML</a>
-                        </div>
-                    </div>
-                </li>
                 <li class="uk-section" id="contact">
                     <h3 class="uk-text-center">Get in touch</h3>
                     <p class="uk-text-center">
@@ -416,18 +385,17 @@
         </main>
         <footer>
             <div uk-grid>
-                <div class="uk-width-1-3"><h4 class="uk-text-center" style="margin-top: 8px;">Made using <a>UIKit</a></h4></div>
-                <div class="uk-width-1-3">
+                <div class="uk-width-1-3@m"><h4 class="uk-text-center">Made using <a>UIKit</a></h4></div>
+                <div class="uk-width-1-3@m">
                     <ul class="uk-iconnav" uk-grid>
-                        <li class="uk-width-1-6 uk-text-center"><a href="www.linkedin.com/in/sjoshi01" uk-icon="icon: linkedin; ratio: 2" uk-tooltip="title: LinkedIn: Shardul Joshi; pos: top"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="mailto:joshardul@gmail.com" uk-icon="icon: mail; ratio: 2" uk-tooltip="title: Email: joshardul@gmail.com; pos: top"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="tel:+16034942452" uk-icon="icon: receiver; ratio: 2" uk-tooltip="title: Phone: (603) 494-2452; pos: top"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="https://github.com/joshardul" uk-icon="icon: github; ratio: 2" uk-tooltip="title: Github: @joshardul; pos: top"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="https://www.facebook.com/shardul.joshi.167" uk-icon="icon: facebook; ratio: 2" uk-tooltip="title: Facebook: Shardul Joshi; pos: top"></a></li>
-                        <li class="uk-width-1-6 uk-text-center"><a href="https://www.instagram.com/joshi_shardul/" uk-icon="icon: instagram; ratio: 2" uk-tooltip="title: Instagram: @joshi_shardul; pos: top"></a></li>
-                    </ul>
+                            <li class="uk-width-1-5 uk-text-center"><a href="www.linkedin.com/in/sjoshi01" uk-icon="icon: linkedin; ratio: 1.3" uk-tooltip="title: LinkedIn: Shardul Joshi; pos: top"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="mailto:joshardul@gmail.com" uk-icon="icon: mail; ratio: 1.3" uk-tooltip="title: Email: joshardul@gmail.com; pos: top"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="tel:+16034942452" uk-icon="icon: receiver; ratio: 1.3" uk-tooltip="title: Phone: (603) 494-2452; pos: top"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="https://github.com/joshardul" uk-icon="icon: github; ratio: 1.3" uk-tooltip="title: Github: @joshardul; pos: top"></a></li>
+                            <li class="uk-width-1-5 uk-text-center"><a href="" uk-icon="icon: file-text; ratio: 1.3" uk-tooltip="title: View my resume; pos: top"></a></li>
+                        </ul>
                 </div>
-                <div class="uk-width-1-3"><h4 class="uk-text-center" style="margin-top: 8px"><a>Syntax<b>Solutions</b></a></h4></div>
+                <div class="uk-width-1-3@m"><h4 class="uk-text-center"><a>Syntax<b>Solutions</b></a></h4></div>
             </div>
         </footer>
     </body>
