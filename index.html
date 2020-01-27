@@ -43,7 +43,7 @@
             </div>
         </header>
         <main class="uk-container">
-            <ul class="uk-subnav uk-subnav-pill" uk-switcher style="margin-bottom: -20px;" id="navigation">
+            <ul class="uk-subnav uk-subnav-pill" uk-switcher="swiping: false" style="margin-bottom: -20px;" id="navigation">
                 <li><a href="#">Intro</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Education</a></li>
@@ -57,7 +57,10 @@
             <hr>
             <ul class="uk-switcher content-switcher" style="">
                 <li class="uk-section" id="intro">
-                    <p class="indent justify">My name is Shardul Joshi and I am a first-year student at Rensselaer Polytechnic Institute studying computer science along with a minor in management (business). Being on an accelerated path, I will be participating in RPI's Arch program early. The Arch is a program that enables undergraduates to have an “away” experience during the school year, unlike students at other schools, who have to pursue such opportunities during the shorter summer breaks. To accomplish this, Rensselaer students take courses during the summer after their sophomore year to replace a semester during the following school year. My accelerated status means that although it is my first year, I am classified as a sophomore academically, and will therefore be taking my Arch summer semester this coming summer. This will lead to an “away” Spring 2021 semester, for which I am seeking a software engineering co-op. This semester, I have taken Data Structures and become very familiar with C++ and various types of data structures, both regarding their use and their implementations. Next semester, I will be taking Foundations of Computer Science and Computer Organization. Following that and prior to the start of a Spring 2021 co-op, I will have taken Introduction to Algorithms, Principles of Software, Graph Theory, Operating Systems, Programming Languages, and Database Systems. These classes will ensure that I am well-equipped with the technical knowledge necessary to be trusted with greater responsibilities in a co-op level position. I look forward to the prospects of making significant contributions in a Spring 2021 semester software engineering position.</p>
+                    <h3 class="uk-text-center">Hello, and welcome!</h3>
+                    <p class="uk-dropcap justify">I am Shardul Joshi, a first-year student at Rensselaer Polytechnic Institute studying computer science along with a minor in management (business). My interest in computer science and programming stemmed from my classes early on in high school. Since then, I have taken the opportunity to learn more about the field both through higher education and personal projects. A portfolio of the latter can be seen with the link above. These projects show a theme: an emphasis on educational technologies. I have always valued education highly, and my experiences as a math tutor and a counselor as a STEM camp, both for middle and high school students, have allowed me to help others develop the same appreciation for it. I am hoping to utilize the technical skills that I have developed so far, as well as those that I will continue to develop over the next few years at RPI, to contribute to the field of educational technolgies post graduation.</p>
+                    <p class="justify">
+                    Since I am on an accelerated path, I will be participating in RPI's Arch program early. <a href="https://info.rpi.edu/the-arch">The Arch</a> is a program that enables undergraduates to have an “away” experience during the school year, unlike students at other schools, who have to pursue such opportunities during the shorter summer breaks. To accomplish this, Rensselaer students take courses during the summer after their sophomore year to replace a semester during the following school year. My accelerated status means that although it is my first year, I am classified as a sophomore academically, and will therefore be taking my Arch summer semester this coming summer. This will lead to an “away” Spring 2021 semester, for which I am seeking a software engineering co-op. This website showcases my many, computer-science-related experiences, and a PDF of my resume can also be found <a href="assets/pdfs/resume_shardul_joshi.pdf">here</a>. I hope that these experience and the skills that I have developed through them will enable me to be trusted with greater responsibilities an a co-op position.</p>
                 </li>
                 <li class="uk-section" id="experience">
                     <div uk-grid>
@@ -167,17 +170,22 @@
                             <h4 class="uk-text-center uk-margin-top-remove">Rensselaer Polytechnic Institute <br><small>Bachelors of Science, Computer science<br>Troy, NY</small><br><span class="bg-secondary uk-label" style="font-size: 18px;">2022</span></h4>
                             <p class="uk-text-center"><b>GPA:</b> 3.84/4<br>Dean's Honor List<br>Additional minor in Management (business)</p>
                             <div uk-grid>
-                                <div class="uk-width-1-2">
+                                <div class="uk-width-1-4">
                                     <p><b class="uk-align-right">Notable courses</b></p>
                                 </div>
-                                <div class="uk-width-1-2">
-                                    <ul class="uk-list uk-list-divider">
-                                        <li>Data Structures</li>
-                                        <li>Foundations of Computer Science</li>
-                                        <li>Computer Organization</li>
-                                        <li>Linear Algebra</li>
-                                        <li>Introduction to Management</li>
-                                    </ul>
+                                <div class="uk-width-3-4">
+                                    <dl class="uk-description-list uk-description-list-divider">
+                                        <dt>Data Structures</dt>
+                                        <dd>Programming concepts such as classes, dynamic memory, pointers, data structures and their representations, algorithms, recursion. Language(s): C++.</dd>
+                                        <dt>Foundations of Computer Science</dt>
+                                        <dd>Overview of discrete mathematics (set therory, combinatoics, probability, automata theory), formal reasoning, and proof techniques – mathematical and theoretical tools for computer science.</dd>
+                                        <dt>Computer Organization</dt>
+                                        <dd>Introductions to low-level computer architecture/organization, assembler language, operating systems. Language(s): C, MIPS.</dd>
+                                        <dt>Linear Algebra</dt>
+                                        <dd>Theory underlying vector spaces, algebra of subspaces, bases, linear transformations, eigen-values/vectors, etc.</dd>
+                                        <dt>Introduction to Management</dt>
+                                        <dd>General understanding of the business world and introduction to various aspects of it, such as finance, entrepreneurship, supply chain management, strategy, marketing, etc.</dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
@@ -186,19 +194,22 @@
                             <h4 class="uk-text-center uk-margin-top-remove">Andover High School <br><small>High school diploma<br>Andover, MA</small><br><span class="bg-secondary uk-label" style="font-size: 18px;">2019</span></h4>
                             <p class="uk-text-center"><b>GPA:</b> 3.87/4 (unweighted), 4.53/5 (weighted)<br>Honor roll<br>Top 10% of a 446-member graduating class</p>
                             <div uk-grid>
-                                <div class="uk-width-1-2">
+                                <div class="uk-width-1-4">
                                     <p><b class="uk-align-right">Notable courses</b></p>
                                 </div>
-                                <div class="uk-width-1-2">
-                                    <ul class="uk-list uk-list-divider">
-                                        <li>AP Computer Science A</li>
-                                        <li>AP Computer Science Principles</li>
-                                        <li>AP Calculus BC</li>
-                                        <li>AP Physics C</li>
-                                        <li>AP English Language and Composition</li>
-                                        <li>AP Spanish Language and Culture</li>
-                                        <li>AP Physics I</li>
-                                    </ul>
+                                <div class="uk-width-3-4">
+                                    <dl class="uk-description-list uk-description-list-divider">
+                                        <dt>AP Computer Science Principles</dt>
+                                        <dd>Introductions to data structures, algorithm analysis (sorting, recursion, etc.), non-static websites using Flask framework, and database queries, culminating an an AP exam (AP Computer Science Principles). Language(s): C, Python, HTML, CSS, SQL.</dd>
+                                        <dt>AP Computer Science Java</dt>
+                                        <dd>Programming concepts such as object-oriented programming, loops, logic gates, sorting algorithms, etc., culminating in an AP exam (AP Computer Science A). Language(s): Java.</dd>
+                                        <dt>AP Calculus BC</dt>
+                                        <dd>Calculus concepts that would span Calculus I and II collge courses, such as functions, limits, continuity, derivatives (explicit, implicit), related rates, integrals (definite, indefinite), polar coordinates, parametric equations, infinite sequences and series, and vectors, culminating in an AP exam (AP Calculus BC).</dd>
+                                        <dt>AP Physics C</dt>
+                                        <dd>Applying calculus to  physics concepts and proofs, both in mechanics and electricity and magnetism, concluding in two AP exams (AP Physics C: Mechanics and  AP Physics C: Electricity and Magnetism).</dd>
+                                        <dt>AP English Language and Composition</dt>
+                                        <dd>Understanding rhetorical choices and utilizing those strategies, as well as synthesizing information from a multitude of sources, to make effective argument in writing, culminating in an AP exam (AP English Language and Composition).</dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
@@ -348,8 +359,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="uk-width-1-2@m">
-                            <div class="uk-card uk-card-default uk-flex uk-flex-center">
+                        <div class="uk-width-1-2@m uk-flex uk-flex-middle">
+                            <div class="uk-card uk-card-default uk-flex uk-flex-center uk-grid-item-match">
                                 <div class="uk-card-body">
                                     <h5 class="uk-text-center">
                                         If you have questions regarding any of my projects, or you see anything that interests you, feel free to <a href="#" uk-switcher-item="7">contact me</a>.
@@ -575,7 +586,7 @@
         </main>
         <footer>
             <div uk-grid>
-                <div class="uk-width-1-3@m"><h4 class="uk-text-center">Built using <a>UIKit</a></h4></div>
+                <div class="uk-width-1-3@m"><h4 class="uk-text-center">Built using <a href="https://getuikit.com">UIKit</a></h4></div>
                 <div class="uk-width-1-3@m">
                     <ul class="uk-iconnav" uk-grid>
                             <li class="uk-width-1-5 uk-text-center"><a href="www.linkedin.com/in/sjoshi01" uk-icon="icon: linkedin; ratio: 1.3" uk-tooltip="title: LinkedIn: Shardul Joshi; pos: top"></a></li>
@@ -585,7 +596,7 @@
                             <li class="uk-width-1-5 uk-text-center"><a href="" uk-icon="icon: file-text; ratio: 1.3" uk-tooltip="title: View my resume; pos: top"></a></li>
                         </ul>
                 </div>
-                <div class="uk-width-1-3@m"><h4 class="uk-text-center"><a href="http://syntax-solutions.xyz/">Syntax<b>Solutions</b></a></h4></div>
+                <div class="uk-width-1-3@m"><h4 class="uk-text-center">© 2020 Shardul Joshi</h4></div>
             </div>
         </footer>
     </body>
