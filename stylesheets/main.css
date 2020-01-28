@@ -84,6 +84,10 @@ main
     padding-top: 80px;
     padding-bottom: 60px;
 }
+.uk-tab-ul .uk-active a
+{
+    border-bottom-color: #00B8D4;
+}
 
 /* Custom elements */
 .content-switcher
@@ -95,13 +99,16 @@ main
 }
 .chip
 {
-    display: inline-block;
-    height: 32px;
+    display: inline-grid;
     font-size: 13px;
     font-weight: 500;
-    line-height: 32px;
-    padding: 0 12px;
+    padding: 5px 12px;
     border-radius: 16px;
+    background: #fff;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 footer
 {

@@ -227,7 +227,7 @@
                                             <a uk-icon="icon: github; ratio: 1.3" class="text-secondary" href="https://github.com/joshardul/sevenplush" uk-tooltip="title: Github repo; pos: top"></a>
                                         </span>
                                     </h3>
-                                    <div uk-slider>
+                                    <div uk-slider="center: true">
                                         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
                                             <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
                                                 <li>
@@ -371,49 +371,39 @@
                     </div>
                 </li>
                 <li class="uk-section" id="skills">
-                    <div uk-grid>
-                        <div class="uk-width-1-3@m">
-                            <ul class="uk-list uk-list-divider">
-                                <li class="uk-text-center"><b>Technical</b></li>
-                                <li class="uk-text-center" style="line-height: 35px;">
-                                    <span class="chip bg-primary">Python</span>
-                                    <span class="chip bg-primary">Java</span>
-                                    <span class="chip bg-primary">Swift</span>
-                                    <span class="chip bg-primary">C</span>
-                                    <span class="chip bg-primary">C++</span>
-                                    <span class="chip bg-primary">HTML</span>
-                                    <span class="chip bg-primary">CSS</span>
-                                    <span class="chip bg-primary">JavaScript</span>
-                                    <span class="chip bg-primary">Git</span>
-                                    <span class="chip bg-primary">web/mobile app development</span>
-                                    <span class="chip bg-primary">data structures</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="uk-width-1-3@m">
-                            <ul class="uk-list uk-list-divider">
-                                <li class="uk-text-center"><b>Soft</b></li>
-                                <li class="uk-text-center" style="line-height: 35px;">
-                                    <span class="chip bg-primary">writing</span>
-                                    <span class="chip bg-primary">organization</span>
-                                    <span class="chip bg-primary">team leadership</span>
-                                    <span class="chip bg-primary">project management</span>
-                                    <span class="chip bg-primary">team building</span>
-                                    <span class="chip bg-primary">project planning</span>
-                                    <span class="chip bg-primary">public speaking</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="uk-width-1-3@m">
-                            <ul class="uk-list uk-list-divider">
-                                <li class="uk-text-center"><b>Languages</b></li>
-                                <li class="uk-text-center" style="line-height: 35px;">
-                                    <span class="chip bg-primary">English</span>
-                                    <span class="chip bg-primary">Spanish</span>
-                                    <span class="chip bg-primary">Marathi</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div uk-filter="target: .js-filter">
+
+                        <ul uk-margin uk-tab class="uk-tab-ul">
+                            <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                            <li class="uk-disabled"><hr class="uk-divider-vertical" style="height: 100%"></li>
+                            <li uk-filter-control="[data-skill-type='technical']"><a href="#">Technical</a></li>
+                            <li uk-filter-control="[data-skill-type='soft']"><a href="#">Soft</a></li>
+                            <li uk-filter-control="[data-skill-type='language']"><a href="#">Languages</a></li>
+                        </ul>
+
+                        <ul class="js-filter uk-text-center">
+                            <li data-skill-type="technical" class="chip text-primary">Python</li>
+                            <li data-skill-type="technical" class="chip text-primary">Java</li>
+                            <li data-skill-type="technical" class="chip text-primary">Swift</li>
+                            <li data-skill-type="technical" class="chip text-primary">C</li>
+                            <li data-skill-type="technical" class="chip text-primary">C++</li>
+                            <li data-skill-type="technical" class="chip text-primary">HTML</li>
+                            <li data-skill-type="technical" class="chip text-primary">CSS</li>
+                            <li data-skill-type="technical" class="chip text-primary">JavaScript</li>
+                            <li data-skill-type="technical" class="chip text-primary">Git</li>
+                            <li data-skill-type="technical" class="chip text-primary">web/mobile app development</li>
+                            <li data-skill-type="technical" class="chip text-primary">data structures</li>
+                            <li data-skill-type="soft" class="chip text-primary">writing</li>
+                            <li data-skill-type="soft" class="chip text-primary">organization</li>
+                            <li data-skill-type="soft" class="chip text-primary">team leadership</li>
+                            <li data-skill-type="soft" class="chip text-primary">project management</li>
+                            <li data-skill-type="soft" class="chip text-primary">team building</li>
+                            <li data-skill-type="soft" class="chip text-primary">project planning</li>
+                            <li data-skill-type="soft" class="chip text-primary">public speaking</li>
+                            <li data-skill-type="language" class="chip text-primary">English</li>
+                            <li data-skill-type="language" class="chip text-primary">Spanish</li>
+                            <li data-skill-type="language" class="chip text-primary">Marathi</li>
+                        </ul>
                     </div>
                 </li>
                 <li class="uk-section" id="activities">
@@ -421,7 +411,7 @@
                         <li class="uk-open">
                             <a class="uk-accordion-title" href="#">The <i>Polytechnic</i> <small>(school newspaper)</small></a>
                             <div class="uk-accordion-content">
-                                <p class="justify">The <i>Polytechnic</i>, or the <i>Poly</i>, for short, is the online school newspaper of RPI, found at <a href="https://poly.rpi.edu">poly.rpi.edu</a>. We help keep the student body informed of campus news by covering events, conducting interviews, and more. Additionally, staff and general public can write opinion pieces to express arguments that they feel are important. We have several departments: News, Features, Editorial/Opinion, Sports, Photo, Publicity, and Copy. Elections for voting member positions are done at the end of each semester for the following one. Joining the <i>Poly</i> has been a great decision for me. I have began to enjoy writing in recent years, but I still find that I consider other subject priorities. At a STEM school where the humanities are less emphasized, I knew I would not pursue them in a classroom setting, so I wanted to find a way to keep up my writing. The <i>Poly</i> provided me with that opportunity, as well as introduced me to a great group of people who shared my combined interest in both technology and writing.</p>
+                                <p class="justify">The <i>Polytechnic</i>, or the <i>Poly</i>, for short, is the online school newspaper of RPI, found at <a href="https://poly.rpi.edu">poly.rpi.edu</a>. We help keep the student body informed of campus news by covering events, conducting interviews, and more. Additionally, staff and general public can write opinion pieces to express arguments that they feel are important. We have several departments: News, Features, Editorial/Opinion, Sports, Photo, Publicity, and Copy. Elections for voting member positions are done at the end of each semester for the following one. Joining the <i>Poly</i> has been a great decision for me. I have began to enjoy writing in recent years, but I still find that I consider other subject priorities. At a STEM school where the humanities are less emphasized, I knew I would not pursue them in a classroom setting, so I wanted to find a way to keep up my writing. The <i>Poly</i> provided me with that opportunity, as well as introduced me to a great group of people who shared my combined interest in both technology and writing. My staff page, <a href="https://poly.rpi.edu/staff/shardul-joshi/">poly.rpi.edu/staff/shardul-joshi/</a>, lists all of my articles for the <i>Poly</i>.</p>
                                 <table class="uk-table uk-table-divider">
                                     <thead>
                                         <tr>
