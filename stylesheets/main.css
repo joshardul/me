@@ -88,6 +88,19 @@ main
 {
     border-bottom-color: #00B8D4;
 }
+.uk-label-custom
+{
+    background: #fff;
+    border-width: 1px;
+    border-style: solid;
+    color: #424242;
+    font-size: 13px;
+}
+.content-next-to-label
+{
+    position: relative;
+    top: 1.5px;
+}
 
 /* Custom elements */
 .content-switcher
