@@ -105,6 +105,10 @@ main
     position: relative;
     top: 1.5px;
 }
+a.no-hover-decoration:hover
+{
+    text-decoration: none;
+}
 
 /* Custom elements */
 .content-switcher
