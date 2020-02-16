@@ -21,6 +21,10 @@
 {
     color: #00B8D4 !important;
 }
+.text-dark
+{
+    color: #666 !important;
+}
 body
 {
     background: #fcfcfc;
