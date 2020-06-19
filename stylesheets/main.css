@@ -109,6 +109,10 @@ a.no-hover-decoration:hover
 {
     text-decoration: none;
 }
+.uk-modal-body
+{
+    width: 90%;
+}
 
 /* Custom elements */
 .content-switcher
