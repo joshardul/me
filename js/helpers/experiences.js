@@ -1,6 +1,8 @@
 // Experiences helpers
+
+// Experiences objects
 var experiences = [{}];
-experiences.pop(); // Can't figure out how to make this array know it is an array of objects
+experiences.pop(); // Can't figure out how to make this array know it is an array of objects without this line
 
 // Konjoian Education Center
 var kec =
@@ -134,7 +136,7 @@ var alac =
     name: "Rensselaer Advising and Learning Assistance Center",
     location: "Troy, NY",
     start_date: "Feb 2020",
-    end_date: "present",
+    end_date: "",
     position: "Tutor",
     description:
     [
@@ -151,7 +153,7 @@ var cadence =
     name: "Cadence Design Systems",
     location: "Burlington, MA",
     start_date: "May 2020",
-    end_date: "present",
+    end_date: "",
     position: "Software engineering intern",
     description:
     [
@@ -161,6 +163,6 @@ var cadence =
 };
 experiences.push(cadence);
 
-// HTML Elements
+// HTML elements
 var experience_link = "<li><a href=\"#%id%\">%link_text%</a></li>";
-var experience_card = "<div class=\"uk-card uk-card-default\" id=\"%id%\"><div class=\"uk-card-header\"><h3 class=\"uk-card-title uk-margin-remove-bottom text-primary\">%name%</h3><p style=\"font-size: 15px;\" class=\"uk-text-meta uk-margin-remove-top\">%location% | %start_date% - %end_date% | <i>%position%</i></p></div><div class=\"uk-card-body\" style=\"padding-top: 15px;\"><ul>%description%</ul></div></div>";
+var experience_card = "<div class=\"uk-card uk-card-default\" id=\"%id%\"><div class=\"uk-card-header\"><h3 class=\"uk-card-title uk-margin-remove-bottom text-primary\">%name%</h3><p style=\"font-size: 15px;\" class=\"uk-text-meta uk-margin-remove-top\">%location% | %dates% | <i>%position%</i></p></div><div class=\"uk-card-body\" style=\"padding-top: 15px;\"><ul>%description%</ul></div></div>";
