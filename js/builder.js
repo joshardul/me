@@ -142,4 +142,22 @@ for (let i = 0; i < skill_types.length; i++)
 
 // TODO: Build activities section
 
-// TODO: Build honors/awards section
+// Build honors/awards section
+for (let i = 0; i < honors.length; i++)
+{
+    // Get the current honor
+    var honor = honors[i];
+    
+    // Create the row for the table
+    var row = honor_row;
+    row = row.replace("%title%", honor.title);
+    var levels = "" + honor.levels;
+    levels = levels.replaceAll(",", ", ");
+    row = row.replace("%levels%", levels);
+    var dates = "" + honor.dates;
+    dates = dates.replaceAll(",", ", ");
+    row = row.replace("%dates%", dates);
+    
+    // Add the row to the honors table
+    $("#honors-table").prepend(row);
+}
