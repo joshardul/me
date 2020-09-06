@@ -162,7 +162,7 @@ var ahs =
         "Top 10% of a 446-member graduating class"
     ],
     courses: ahs_classes,
-    catalog: "http://www.aps1.net/DocumentCenter/View/7804/Program-of-Studies?bidId="
+    catalog: "http://catalog.rpi.edu"
 };
 schools.push(ahs);
 
@@ -188,7 +188,7 @@ var rpi =
         "Additional minor in Management (business)"
     ],
     courses: rpi_classes,
-    catalog: "http://catalog.rpi.edu"
+    catalog: "http://www.aps1.net/DocumentCenter/View/7804/Program-of-Studies?bidId="
 };
 schools.push(rpi);
 
