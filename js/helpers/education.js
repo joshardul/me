@@ -106,6 +106,24 @@ var linalg =
 };
 rpi_classes.push(linalg);
 
+var proglang = 
+{
+    name: "Programming Languages",
+    code: "CSCI 4430",
+    date_taken: "Fall 2020",
+    description: "Study of important concepts in current programming lanugages includeing language processing, the role of abstraction, various programming paradigms, and formal language definition."
+};
+rpi_classes.push(proglang);
+
+var sdd = 
+{
+    name: "Software Design and Documentation",
+    code: "CSCI 4440",
+    date_taken: "Fall 2020",
+    description: "Project-based course following the phases of developing software including specification, software architecture, user interfaces, and documentation, with an emphasis on object-oriented design."
+};
+rpi_classes.push(sdd);
+
 // Foundations of Computer Science
 var focs =
 {
