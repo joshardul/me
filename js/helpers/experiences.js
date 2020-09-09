@@ -136,7 +136,7 @@ var alac =
     name: "Rensselaer Advising and Learning Assistance Center",
     location: "Troy, NY",
     start_date: "Feb 2020",
-    end_date: "",
+    end_date: "May 2020",
     position: "Tutor",
     description:
     [
@@ -153,7 +153,7 @@ var cadence =
     name: "Cadence Design Systems",
     location: "Burlington, MA",
     start_date: "May 2020",
-    end_date: "",
+    end_date: "Aug 2020",
     position: "Software engineering intern",
     description:
     [
