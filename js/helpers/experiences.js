@@ -58,23 +58,6 @@ var tye =
 };
 experiences.push(tye);
 
-// 
-var sevenplush =
-{
-    id: "sevenplush",
-    link_text: "iOS App for AHS",
-    name: "iOS App for Andover High School",
-    location: "Andover, MA",
-    start_date: "Jul 2018",
-    end_date: "Jul 2018",
-    position: "Independent app developer",
-    description:
-    [
-        "Independently developed iOS app for students to keep track of 8-day rotation"
-    ]
-};
-experiences.push(sevenplush);
-
 // RSM
 var rsm =
 {
