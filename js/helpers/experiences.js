@@ -39,25 +39,6 @@ var iamv =
 };
 experiences.push(iamv);
 
-// TYE
-var tye =
-{
-    id: "tye",
-    link_text: "TYE",
-    name: "TiE Boston Young Entrepreneurs",
-    location: "Boston, MA",
-    start_date: "Sep 2017",
-    end_date: "Apr 2018",
-    position: "CTO of team of 5",
-    description:
-    [
-        "Attended meetings every other Saturday from September 2017 to April 2018 culminating in a business plan competition judged by a panel of venture capitalists",
-        "Learned from real-world entrepreneurs about various aspects of running a startup (research, marketing, finance, prototyping, presentation, teamwork, and other interpersonal skills)",
-        "Conceived, designed, and proposed, with early prototypes, a software to automate recommendations for teachers that suggest specific extra-help content catered to individual student needs"
-    ]
-};
-experiences.push(tye);
-
 // RSM
 var rsm =
 {
@@ -92,6 +73,25 @@ var unhtechcamp =
     ]
 };
 experiences.push(unhtechcamp);
+
+// TYE
+var tye =
+{
+    id: "tye",
+    link_text: "TYE",
+    name: "TiE Boston Young Entrepreneurs",
+    location: "Boston, MA",
+    start_date: "Sep 2017",
+    end_date: "Apr 2018",
+    position: "CTO of team of 5",
+    description:
+    [
+        "Attended meetings every other Saturday from September 2017 to April 2018 culminating in a business plan competition judged by a panel of venture capitalists",
+        "Learned from real-world entrepreneurs about various aspects of running a startup (research, marketing, finance, prototyping, presentation, teamwork, and other interpersonal skills)",
+        "Conceived, designed, and proposed, with early prototypes, a software to automate recommendations for teachers that suggest specific extra-help content catered to individual student needs"
+    ]
+};
+experiences.push(tye);
 
 // Syntax Solutions
 var ss =
@@ -140,8 +140,10 @@ var cadence =
     position: "Software engineering intern",
     description:
     [
-        "Works as part of the team developing Cadence's chip design layout software, Allegro",
-        "Primary contributor on projects including a theme customization feature and code maintenance to improve discipline of code"
+        "Worked on feature development for flagship Allegro chip design layout software",
+        "Refactored legacy C/C++ codebase to adhere to company software principles",
+        "Designed and developed color customization tool using C++ and Qt framework",
+        "Added functionality to Allegro scripting framework to enable tutorial recording and replay"
     ]
 };
 experiences.push(cadence);
