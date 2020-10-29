@@ -12,24 +12,30 @@ var technical =
     skills:
     [
         "Python",
-        "Java",
-        "Swift",
         "C",
         "C++",
+        "Java",
+        "Swift",
         "HTML",
         "CSS",
         "JavaScript",
         "Git",
-        "Flask (Python framework)",
+        "Prolog",
+        "Scheme",
+        "Haskell",
         "data structures",
         "object-oriented design",
+        "linear algebra",
+        "discrete mathematics",
+        "computer architecture",
+        "algorithms",
+        "software design patterns",
         "Microsoft Office",
         "MacOS",
         "Linux",
         "Windows",
-        "linear algebra",
-        "discrete mathematics",
-        "LaTeX"
+        "LaTeX",
+        "Agile project planning"
     ]
 };
 skill_types.push(technical);
@@ -44,9 +50,7 @@ var soft =
         "writing",
         "organization",
         "team leadership",
-        "project management",
-        "team building",
-        "project planning",
+        "communication",
         "public speaking",
         "teamwork"
     ]
