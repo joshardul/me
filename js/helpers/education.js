@@ -193,7 +193,7 @@ var rpi =
     degree: "Bachelors of Science, Computer Science",
     location: "Troy, NY",
     grad_year: "2022",
-    gpa: "3.71",
+    gpa: "3.74",
     logo:
     {
         name: "rpi.png",
