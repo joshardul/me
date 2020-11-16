@@ -112,6 +112,7 @@ var proglang =
     code: "CSCI 4430",
     date_taken: "Fall 2020",
     description: "Study of important concepts in current programming lanugages includeing language processing, the role of abstraction, various programming paradigms, and formal language definition."
+    description: "Study of important concepts in current programming lanugages includeing language processing, the role of abstraction, various programming paradigms, and formal language definition. Language(s): Prolog, Scheme, Haskell, Java"
 };
 rpi_classes.push(proglang);
 
