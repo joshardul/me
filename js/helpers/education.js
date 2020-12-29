@@ -106,6 +106,7 @@ var linalg =
 };
 rpi_classes.push(linalg);
 
+// Programming Languages
 var proglang = 
 {
     name: "Programming Languages",
@@ -114,15 +115,6 @@ var proglang =
     description: "Study of important concepts in current programming lanugages includeing language processing, the role of abstraction, various programming paradigms, and formal language definition. Language(s): Prolog, Scheme, Haskell, Java."
 };
 rpi_classes.push(proglang);
-
-var sdd = 
-{
-    name: "Software Design and Documentation",
-    code: "CSCI 4440",
-    date_taken: "Fall 2020",
-    description: "Project-based course following the phases of developing software including specification, software architecture, user interfaces, and documentation, with an emphasis on object-oriented design."
-};
-rpi_classes.push(sdd);
 
 // Foundations of Computer Science
 var focs =
@@ -134,6 +126,16 @@ var focs =
 };
 rpi_classes.push(focs);
 
+// Software Design and Documentation
+var sdd = 
+{
+    name: "Software Design and Documentation",
+    code: "CSCI 4440",
+    date_taken: "Fall 2020",
+    description: "Project-based course following the phases of developing software including specification, software architecture, user interfaces, and documentation, with an emphasis on object-oriented design."
+};
+rpi_classes.push(sdd);
+
 // Computer Organization
 var comporg =
 {
@@ -143,6 +145,16 @@ var comporg =
     description: "Introductions to low-level computer architecture/organization, assembler language, operating systems. Language(s): C, MIPS (assembly)."
 };
 rpi_classes.push(comporg);
+
+// Financial Accounting
+var finaccting =
+{
+    name: "Financial Accounting",
+    code: "MGMT 2300",
+    date_taken: "Fall 2020",
+    description: "Introduction to basic accounting concepts, financial statements, and standards. Topics include balance sheets, debits, credits, transactions, journal entries, accounts, income statements, inventories, depreciation, assets, liabilities, equity, statements of cash flows, and ratio analysis."
+};
+rpi_classes.push(finaccting);
 
 // Introduction to Management
 var management =
@@ -193,7 +205,7 @@ var rpi =
     degree: "Bachelors of Science, Computer Science",
     location: "Troy, NY",
     grad_year: "2022",
-    gpa: "3.74",
+    gpa: "3.80",
     logo:
     {
         name: "rpi.png",
