@@ -116,5 +116,5 @@ var national_ap_scholar =
 };
 honors.push(national_ap_scholar);
 
-// HTML Elements
+// HTML elements
 var honor_row = "<tr><td>%title%</td><td>%levels%</td><td>%dates%</td></tr>";

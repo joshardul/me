@@ -119,6 +119,6 @@ var scienceteam =
 };
 activities.push(scienceteam);
 
-// HTML Elements
+// HTML elements
 var activity_accordion_item = "<li class=\"%class%\"><a class=\"uk-accordion-title\" href=\"#\">%organization%%sub_title%</a><div class=\"uk-accordion-content\"><p class=\"justify\">%description%</p><table class=\"uk-table uk-table-divider\"><thead><tr><th>Positions held</th><th>Time period</th></tr></thead><tbody id=\"%id%-positions-table\"></tbody></table></div></li>";
 var activity_position_row = "<tr><td>%title%</td><td>%dates%</td></tr>";
