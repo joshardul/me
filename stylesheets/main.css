@@ -160,3 +160,7 @@ footer
     padding-top: 15px;
     padding-bottom: 15px;
 }
+#sevenplush-slider img
+{
+    max-height: 300px;
+}

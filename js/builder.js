@@ -108,7 +108,98 @@ for ( let i = 0; i < schools.length; i++ )
     }
 }
 
-// TODO: Build projects section
+// Build projects section
+for ( let i = 0; i < projects.length; i++ )
+{
+    // Get the current project
+    var project = projects[i];
+    
+    // Create the card for the project
+    var card = project_card;
+    card = card.replace( "%name%", project.name );
+    card = card.replace( "%dates%", ( project.start_date == project.end_date ) ? project.start_date : project.start_date + "–" + project.end_date );
+    // Create the list of icon links for the project
+    var icons = "";
+    for ( let j = 0; j < project.links.length; j++ )
+    {
+        // Get the current link
+        var link = project.links[j];
+        
+        // Create the icon link for the link
+        var icon_link = project_icon;
+        icon_link = icon_link.replace( "%icon%", link.icon );
+        icon_link = icon_link.replace( "%link%", link.link );
+        icon_link = icon_link.replace( "%title%", link.title );
+        
+        // Add the icon link to list of icons
+        icons += icon_link;
+        // If not last icon link, add a bullet
+        if ( j != project.links.length - 1 )
+        {
+            icons += " • ";
+        }
+    }
+    card = card.replace( "%icons%", icons );
+    card = card.replace( "%slider_width%", project.slider_width );
+    card = card.replace( "%id%", project.id );
+    card = card.replace( "%description%", project.description );
+    // Create the list of tags for the project
+    var tags = "";
+    for ( let j = 0; j < project.tags.length; j++ )
+    {
+        // Get the current tag
+        var tag = project.tags[j];
+        
+        // Create the label for the tag
+        var tag_label = project_tag;
+        tag_label = tag_label.replace( "%name%", tag );
+        
+        // Add the icon link to list of icons
+        tags += tag_label;
+        // If not last icon link, add a space
+        if ( j != project.tags.length - 1 )
+        {
+            tags += " ";
+        }
+    }
+    card = card.replace( "%tags%", tags );
+    
+    // If last project card and even number of project cards, add
+    // questions card as extra to last project card (else replace
+    // %extra% with empty string)
+    if ( i == projects.length - 1 && projects.length % 2 == 0 )
+    {
+        card = card.replace( "%extra%", questions_card );
+    }
+    else
+    {
+        card = card.replace( "%extra%", "" );
+    }
+    
+    // Prepend the project card to the project cards grid
+    $( "#project-cards" ).append( card );
+    
+    // Add the images to the project card slider
+    for ( let j = 0; j < project.images.length; j++ )
+    {
+        // Get the current image
+        var image = project.images[j];
+        
+        // Create a slider item for the image
+        var slider_item = project_slider_item;
+        slider_item = slider_item.replace( "%alt%", image.alt );
+        slider_item = slider_item.replace( "%folder%", project.id );
+        slider_item = slider_item.replace( "%name%", image.name );
+        
+        // Add image to project card slider
+        $( "#" + project.id + "-slider" ).append( slider_item );
+    }
+}
+// If odd number of project cards
+if ( projects.length % 2 != 0 )
+{
+    $( "#project-cards" ).append( "<div class=\"uk-width-1-2@m\">" + questions_card + "</div>" );
+}
 
 // Build skills section
 for ( let i = 0; i < skill_types.length; i++ )
@@ -140,25 +231,7 @@ for ( let i = 0; i < skill_types.length; i++ )
     }
 }
 
-//<li class="%class%">
-//    <a class="uk-accordion-title" href="#">%organization%%sub_title%</a>
-//    <div class="uk-accordion-content">
-//        <p class="justify">%description%</p>
-//        <table class="uk-table uk-table-divider">
-//            <thead>
-//                <tr>
-//                    <th>Positions held</th>
-//                    <th>Time period</th>
-//                </tr>
-//            </thead>
-//            <tbody id="%id%-positions-table">
-//                
-//            </tbody>
-//        </table>
-//    </div>
-//</li>
-
-// TODO: Build activities section
+// Build activities section
 for ( let i = 0; i < activities.length; i++ )
 {
     // Get the current school
