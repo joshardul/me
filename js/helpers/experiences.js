@@ -148,6 +148,28 @@ var cadence =
 };
 experiences.push(cadence);
 
+// Amazon
+var amazon =
+{
+    id: "amazon",
+    link_text: "Amazon (AWS)",
+    name: "Amazon Web Services",
+    location: "Boston, MA",
+    start_date: "May 2021",
+    end_date: "", // Aug 2021
+    position: "Software development engineer intern",
+    description:
+    [
+        "Working as a part of the AWS Elastic File System team",
+        "More details coming soon!"
+    ]
+};
+experiences.push(amazon);
+
+// Seeking position message
+var seeking_position_msg = "Seeking a summer 2021 internship in computer science and software engineering";
+var seeking_position = false;
+
 // HTML elements
 var experience_link = "<li><a href=\"#%id%\">%link_text%</a></li>";
 var experience_card = "<div class=\"uk-card uk-card-default\" id=\"%id%\"><div class=\"uk-card-header\"><h3 class=\"uk-card-title uk-margin-remove-bottom text-primary\">%name%</h3><p style=\"font-size: 15px;\" class=\"uk-text-meta uk-margin-remove-top\">%location% | %dates% | <i>%position%</i></p></div><div class=\"uk-card-body\" style=\"padding-top: 15px;\"><ul>%description%</ul></div></div>";

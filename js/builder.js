@@ -42,6 +42,11 @@ for ( let i = 0; i < experiences.length; i++ )
     $( "#experience-cards" ).prepend( card );
 }
 
+// Add seeking position message if necessary
+if ( seeking_position )
+{
+    $( "#seeking-position-msg" ).prepend( seeking_position_msg );
+}
 
 // Build education section
 for ( let i = 0; i < schools.length; i++ )
