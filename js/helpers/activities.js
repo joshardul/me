@@ -4,6 +4,24 @@
 var activities = [{}];
 activities.pop(); // Can't figure out how to make this array know it is an array of objects without this line
 
+// Upsilon Pi Epsilon
+var upe =
+{
+    id: "upe",
+    organization: "Upsilon Pi Epsilon",
+    sub_title: "",
+    description: "Upsilon Pi Epsilon, or UPE, is a computer science honor society. The national organization has chapters at many different universities, including RPI. They offer tutoring for CS courses at RPI for students at RPI, as well as other events around campus. I was inducted into UPE at the end of the Fall 2020 semester.",
+    positions:
+    [
+        {
+            title: "Member",
+            start_date: "Dec 2020",
+            end_date: ""
+        }
+    ]
+};
+activities.push(upe);
+
 // The Polytechnic
 var poly =
 {
@@ -14,9 +32,14 @@ var poly =
     positions:
     [
         {
+            title: "Contributing Editor",
+            start_date: "April 2021",
+            end_date: ""
+        },
+        {
             title: "Editorial/Opinion Editor",
             start_date: "May 2020",
-            end_date: ""
+            end_date: "April 2021"
         },
         {
             title: "Associate Editorial/Opinion Editor",
@@ -118,6 +141,24 @@ var scienceteam =
     ]
 };
 activities.push(scienceteam);
+
+// National Honor Society
+var nhs =
+{
+    id: "nhs",
+    organization: "National Honor Society",
+    sub_title: "",
+    description: "I was inducted into National Honor Society during my junior year of high school. The organization is focused on offering tutoring to other students for a variety of subjects and volunteering at various events.",
+    positions:
+    [
+        {
+            title: "Member",
+            start_date: "Nov 2017",
+            end_date: ""
+        }
+    ]
+};
+activities.push(nhs);
 
 // HTML elements
 var activity_accordion_item = "<li class=\"%class%\"><a class=\"uk-accordion-title\" href=\"#\">%organization%%sub_title%</a><div class=\"uk-accordion-content\"><p class=\"justify\">%description%</p><table class=\"uk-table uk-table-divider\"><thead><tr><th>Positions held</th><th>Time period</th></tr></thead><tbody id=\"%id%-positions-table\"></tbody></table></div></li>";

@@ -106,6 +106,26 @@ var linalg =
 };
 rpi_classes.push(linalg);
 
+// Introduction to Artificial Intelligence
+var introtoai =
+{
+    name: "Introduction to Artificial Intelligence",
+    code: "CSCI 4150",
+    date_taken: "Spring 2021",
+    description: "Introduction to artificial intelligence and machine learning concepts including uninformed/informed search, adversarial games, expectimax search, Bayesian networks, Markov Decision Processes, reinforcement learning, Hidden Markov Models, social choice, game theory, naive bayes, and perceptrons."
+};
+rpi_classes.push(introtoai);
+
+// Graph Theory
+var graphtheory =
+{
+    name: "Graph Theory",
+    code: "CSCI 4260",
+    date_taken: "Spring 2021",
+    description: "Fundamental concepts and methods of graph theory and its applications to computing and the social and natural sciences such as graphs as models, representation of graphs, trees, distances, matchings, connectivity, flows in networks, graph colorings, Hamiltonian cycles, traveling salesman problem, planarity."
+};
+rpi_classes.push(graphtheory);
+
 // Programming Languages
 var proglang = 
 {
@@ -126,6 +146,16 @@ var focs =
 };
 rpi_classes.push(focs);
 
+// Operating Systems
+var opsys =
+{
+    name: "Operating Systems",
+    code: "CSCI 4210",
+    date_taken: "Spring 2021",
+    description: "Various operating systems topics including I/O programming, concurrent processes and synchronization problems, process management and scheduling of processes, virtual memory management, device management, file systems, deadlock problems, system calls, interprocess communication, and network programming."
+};
+rpi_classes.push(opsys);
+
 // Software Design and Documentation
 var sdd = 
 {
@@ -135,6 +165,16 @@ var sdd =
     description: "Project-based course following the phases of developing software including specification, software architecture, user interfaces, and documentation, with an emphasis on object-oriented design."
 };
 rpi_classes.push(sdd);
+
+// Principles of Software
+var psoft =
+{
+    name: "Principles of Software",
+    code: "CSCI 2600",
+    date_taken: "Spring 2021",
+    description: "Study of important concepts in software design, implementation, and testing. Topics include specification, abstraction with classes, design principles and patterns, testing, refactoring, and the software development process, with an overarching goal of the course is for students to learn how to write correct and maintainable software."
+};
+rpi_classes.push(psoft);
 
 // Computer Organization
 var comporg =
@@ -189,6 +229,7 @@ var ahs =
     details:
     [
         "Honor roll",
+        "National Honors Society",
         "Top 10% of a 446-member graduating class"
     ],
     courses: ahs_classes,
@@ -205,7 +246,7 @@ var rpi =
     degree: "Bachelors of Science, Computer Science",
     location: "Troy, NY",
     grad_year: "2022",
-    gpa: "3.80",
+    gpa: "3.82",
     logo:
     {
         name: "rpi.png",
@@ -215,6 +256,7 @@ var rpi =
     details:
     [
         "Dean's Honor List",
+        "Upsilon Pi Epsilon (UPE) (Computer Science Honor Society)",
         "Additional minor in Management (business)"
     ],
     courses: rpi_classes,
