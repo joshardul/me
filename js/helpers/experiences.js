@@ -160,8 +160,9 @@ var amazon =
     position: "Software development engineer intern",
     description:
     [
-        "Working as a part of the AWS Elastic File System team",
-        "More details coming soon!"
+        "Developed garbage collection service for AWS Elastic File System Infrequent Access from a combination of various Amazon web microservices, architecture, and toolkits (Lambda functions, Simple Queue Service, Cloud Development Kit, etc.)",
+        "New service works to eliminate petabytes of leaked data in storage system",
+        "Estimated to significantly reduce storage costs, the savings from which can be passed onto customers"
     ]
 };
 experiences.push(amazon);
