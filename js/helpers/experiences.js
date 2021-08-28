@@ -160,15 +160,14 @@ var amazon =
     position: "Software development engineer intern",
     description:
     [
-        "Developed garbage collection service for AWS Elastic File System Infrequent Access from a combination of various Amazon web microservices, architecture, and toolkits (Lambda functions, Simple Queue Service, Cloud Development Kit, etc.)",
-        "New service works to eliminate petabytes of leaked data in storage system",
+        "Designed and developed an optimization service for Infrequent Access storage in AWS Elastic File System utilizing various AWS microservices, architecture, and toolkits (Lambda, Simple Queue Service, Cloud Development Kit, etc.)",
         "Estimated to significantly reduce storage costs, the savings from which can be passed onto customers"
     ]
 };
 experiences.push(amazon);
 
 // Seeking position message
-var seeking_position_msg = "Seeking a summer 2021 internship in computer science and software engineering";
+var seeking_position_msg = "Seeking full-time software development position starting summer 2022";
 var seeking_position = false;
 
 // HTML elements
