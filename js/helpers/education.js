@@ -7,74 +7,84 @@ ahs_classes.pop(); // Can't figure out how to make this array know it is an arra
 rpi_classes.pop(); // Can't figure out how to make this array know it is an array of objects without this line
 
 // AP Computer Science Principles
-var apcsprinciples =
+var ap_cs_principles =
 {
     name: "AP Computer Science Principles",
     code: "MA987",
     date_taken: "2018-2019",
     description: "Introductions to data structures, algorithm analysis (sorting, recursion, etc.), non-static websites using Flask framework, and database queries, culminating an an AP exam (AP Computer Science Principles). Language(s): C, Python, HTML, CSS, SQL."
 };
-ahs_classes.push(apcsprinciples);
+ahs_classes.push(ap_cs_principles);
 
 // AP Computer Science Java
-var apcsjava =
+var ap_cs_java =
 {
     name: "AP Computer Science Java",
     code: "MA977",
     date_taken: "2018-2019",
     description: "Programming concepts such as object-oriented programming, loops, logic gates, sorting algorithms, etc., culminating in an AP exam (AP Computer Science A). Language(s): Java."
 };
-ahs_classes.push(apcsjava);
+ahs_classes.push(ap_cs_java);
 
 // AP Physics C
-var apphysicsc =
+var ap_physics_c =
 {
     name: "AP Physics C",
     code: "SC467",
     date_taken: "2018-2019",
     description: "Applying calculus to physics concepts and proofs, both in mechanics and electricity and magnetism, concluding in two AP exams (AP Physics C: Mechanics and AP Physics C: Electricity and Magnetism)."
 };
-ahs_classes.push(apphysicsc);
+ahs_classes.push(ap_physics_c);
 
 // AP Calculus BC
-var apcalculusbc =
+var ap_calculus_bc =
 {
     name: "AP Calculus BC",
     code: "MA737",
     date_taken: "2018-2019",
     description: "Calculus concepts that would span Calculus I and II collge courses, such as functions, limits, continuity, derivatives (explicit, implicit), related rates, integrals (definite, indefinite), polar coordinates, parametric equations, infinite sequences and series, and vectors, culminating in an AP exam (AP Calculus BC)."
 };
-ahs_classes.push(apcalculusbc);
+ahs_classes.push(ap_calculus_bc);
 
 // AP Physics 1
-var apphysics1 =
+var ap_physics_1 =
 {
     name: "AP Physics 1",
     code: "SC447",
     date_taken: "2017-2018",
     description: "Algebra-based introduction to physics concepts in both mechanics and electricity, ending with an AP exam (AP Physics 1)."
 };
-ahs_classes.push(apphysics1);
+ahs_classes.push(ap_physics_1);
 
 // AP English Language and Composition
-var aplang =
+var ap_lang =
 {
     name: "AP English Language and Composition",
     code: "EN407",
     date_taken: "2017-2018",
     description: "Understanding rhetorical choices and utilizing those strategies, as well as synthesizing information from a multitude of sources, to make effective argument in writing, culminating in an AP exam (AP English Language and Composition)."
 };
-ahs_classes.push(aplang);
+ahs_classes.push(ap_lang);
 
 // AP Spanish Language and Culture
-var apspanish =
+var ap_spanish =
 {
     name: "AP Spanish Language and Culture",
     code: "WL187",
     date_taken: "2017-2018",
     description: "Culmination to Spanish curriculum at Andover High School with advanced and extensive writing, reading, and speaking practice. Ended with AP exam (AP Spanish Language and Culture)."
 };
-ahs_classes.push(apspanish);
+ahs_classes.push(ap_spanish);
+
+// Machine Learning from Data
+var ml_from_data =
+{
+    name: "Machine Learning from Data",
+    code: "CSCI 4100",
+    date_taken: "Fall 2021",
+    description: "Introduction to the theory of machine learning (What is learning? Is learning feasible? How can we do it? How can we do it well?) and the techniques: linear models, non-linear transforms, regularization to prevent overfitting, validation, similarity based methods (nearest neighbor, radial basis functions), neural networks, support vector machines, and the kernel trick. Assignments along the way included implementing all of these techniques."
+};
+rpi_classes.push(ml_from_data);
 
 // Introduction to Algorithms
 var algo =
@@ -97,44 +107,64 @@ var ds =
 rpi_classes.push(ds);
 
 // Linear Algebra
-var linalg =
+var lin_alg =
 {
     name: "Linear Algebra",
     code: "MATH 4100",
     date_taken: "Spring 2020",
     description: "Theory underlying vector spaces, algebra of subspaces, bases, linear transformations, eigen-values/vectors, etc."
 };
-rpi_classes.push(linalg);
+rpi_classes.push(lin_alg);
 
 // Introduction to Artificial Intelligence
-var introtoai =
+var intro_to_ai =
 {
     name: "Introduction to Artificial Intelligence",
     code: "CSCI 4150",
     date_taken: "Spring 2021",
     description: "Introduction to artificial intelligence and machine learning concepts including uninformed/informed search, adversarial games, expectimax search, Bayesian networks, Markov Decision Processes, reinforcement learning, Hidden Markov Models, social choice, game theory, naive bayes, and perceptrons."
 };
-rpi_classes.push(introtoai);
+rpi_classes.push(intro_to_ai);
 
 // Graph Theory
-var graphtheory =
+var graph_theory =
 {
     name: "Graph Theory",
     code: "CSCI 4260",
     date_taken: "Spring 2021",
     description: "Fundamental concepts and methods of graph theory and its applications to computing and the social and natural sciences such as graphs as models, representation of graphs, trees, distances, matchings, connectivity, flows in networks, graph colorings, Hamiltonian cycles, traveling salesman problem, planarity."
 };
-rpi_classes.push(graphtheory);
+rpi_classes.push(graph_theory);
+
+// Programming for Cognitive Science and Artificial Intelligence
+var prog_cog_sci_ai = 
+{
+    name: "Programming for Cognitive Science and Artificial Intelligence",
+    code: "COGS 4410",
+    date_taken: "Fall 2021",
+    description: "Brief overview of programming for data science, machine learning, artificial intelligence, and cognitive science applications in Python using packages such as pandas, NumPy, PyTorch, scikit-learn. Topics included exploratory data analysis, data preprocessing, linear regression, probability/statistics, logistic regression, linear algebra, neural networks, support vector machines, model selection, naive Bayes, ensemble methods, clustering, deep learning, convolutional neural networks, residual networks, recurrent neural networks, generative adversarial networks, and natural language processing. Language(s): Python."
+};
+rpi_classes.push(prog_cog_sci_ai);
+
+// Data Science
+var data_sci = 
+{
+    name: "Data Science",
+    code: "CSCI 4350",
+    date_taken: "Fall 2021",
+    description: "Discussion of data management/science best practices, and application to an actual semester-long data science project."
+};
+rpi_classes.push(data_sci);
 
 // Programming Languages
-var proglang = 
+var prog_lang = 
 {
     name: "Programming Languages",
     code: "CSCI 4430",
     date_taken: "Fall 2020",
     description: "Study of important concepts in current programming lanugages including language processing, the role of abstraction, various programming paradigms, and formal language definition. Language(s): Prolog, Scheme, Haskell, Java, Python."
 };
-rpi_classes.push(proglang);
+rpi_classes.push(prog_lang);
 
 // Foundations of Computer Science
 var focs =
@@ -185,6 +215,16 @@ var comporg =
     description: "Introductions to low-level computer architecture/organization, assembler language, operating systems. Language(s): C, MIPS (assembly)."
 };
 rpi_classes.push(comporg);
+
+// Managerial Finance
+var finance =
+{
+    name: "Managerial Finance",
+    code: "MGMT 2320",
+    date_taken: "Fall 2021",
+    description: "Introduction to corporate financial analysis and decision making, covering financial statement analysis, valuation principles, risk and return analysis, working capital management, capital budgeting, cost of capital, capital structure, and dividend policy."
+};
+rpi_classes.push(finance);
 
 // Financial Accounting
 var finaccting =
@@ -246,7 +286,7 @@ var rpi =
     degree: "Bachelors of Science, Computer Science",
     location: "Troy, NY",
     grad_year: "2022",
-    gpa: "3.82",
+    gpa: "3.84",
     logo:
     {
         name: "rpi.png",
