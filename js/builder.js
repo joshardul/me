@@ -9,6 +9,11 @@ for ( let i = 0; i < experiences.length; i++ )
     link = link.replace( "%id%", experience.id );
     link = link.replace( "%link_text%", experience.link_text );
     $( "#experience-nav" ).prepend( link );
+    // Set up the mobile version (a select to display only one experience)
+    var option = experience_option
+    option = option.replace( "%id%", experience.id );
+    option = option.replaceAll( "%link_text%", experience.link_text );
+    $( "#experience-mobile-nav" ).prepend( option );
     
     // Create the card for the experience
     var card = experience_card;
@@ -40,9 +45,31 @@ for ( let i = 0; i < experiences.length; i++ )
     
     // Prepend the experience card to the experiences
     $( "#experience-cards" ).prepend( card );
+    // Mobile card
+    card = card.replace( "uk-card uk-card-default",
+                         "uk-card uk-card-default " + experience.id + "-mobile-card hide" )
+    card = card.replace( " id=\"" + experience.id + "\"", "" )
+    $( "#experience-mobile-cards" ).prepend( card );
 }
 
-// Add seeking position message if necessary
+// Code to implement mobile navigation of experiences
+// Adapted from: 
+// https://stackoverflow.com/questions/6164507/change-the-content-of-a-div-based-on-selection-from-dropdown-menu/24849350
+change_func = function()
+{
+    var target = $( this ).data( "target" );
+    var show = $( "option:selected", this ).data( "show" );
+    $( target ).children().addClass( "hide" );
+    $( show ).removeClass( "hide" );
+}
+$( document ).on( "change", ".experience-mobile-nav", change_func );
+trig_func = function()
+{
+    $( ".experience-mobile-nav" ).trigger( "change" );
+}
+$( document ).ready( trig_func );
+
+// Add seeking position message if seeking position
 if ( seeking_position )
 {
     $( "#seeking-position-msg" ).prepend( seeking_position_msg );
@@ -87,7 +114,8 @@ for ( let i = 0; i < schools.length; i++ )
     // Prepend the school section and modal to the schools
     $( "#schools" ).prepend( section + modal );
     
-    // Create courses description list (done after adding the school so list can be appended to the HTML element with the id)
+    // Create courses description list (done after adding the school so list can
+    // be appended to the HTML element with the id)
     for ( let j = 0; j < school.courses.length; j++ )
     {
         // Get the current course
@@ -122,7 +150,9 @@ for ( let i = 0; i < projects.length; i++ )
     // Create the card for the project
     var card = project_card;
     card = card.replace( "%name%", project.name );
-    card = card.replace( "%dates%", ( project.start_date == project.end_date ) ? project.start_date : project.start_date + "–" + project.end_date );
+    card = card.replace( "%dates%",
+                         ( project.start_date == project.end_date ) ?
+                         project.start_date : project.start_date + "–" + project.end_date );
     // Create the list of icon links for the project
     var icons = "";
     for ( let j = 0; j < project.links.length; j++ )
@@ -200,10 +230,12 @@ for ( let i = 0; i < projects.length; i++ )
         $( "#" + project.id + "-slider" ).append( slider_item );
     }
 }
-// If odd number of project cards
+// If odd number of project cards, questions card was not already added
+// in the loop, so add here
 if ( projects.length % 2 != 0 )
 {
-    $( "#project-cards" ).append( "<div class=\"uk-width-1-2@m\">" + questions_card + "</div>" );
+    $( "#project-cards" ).append( "<div class=\"uk-width-1-2@m\">"
+                                  + questions_card + "</div>" );
 }
 
 // Build skills section
@@ -248,7 +280,10 @@ for ( let i = 0; i < activities.length; i++ )
     accordion_item = accordion_item.replace( "%class%", ( i == 0 ) ? "uk-open" : "" );
     accordion_item = accordion_item.replace( "%organization%", activity.organization );
     // If there is a sub-title, add it, else add nothing
-    accordion_item = accordion_item.replace( "%sub_title%", ( activity.sub_title != "" ) ? " (" + activity.sub_title + ")" : activity.sub_title );
+    accordion_item = accordion_item.replace( "%sub_title%",
+                                             ( activity.sub_title != "" )
+                                             ? " (" + activity.sub_title + ")"
+                                             : activity.sub_title );
     accordion_item = accordion_item.replace( "%description%", activity.description );
     accordion_item = accordion_item.replaceAll( "%id%", activity.id );
     

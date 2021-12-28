@@ -25,10 +25,10 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157373034-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag(){ dataLayer.push( arguments ); }
+            gtag( "js", new Date() );
 
-            gtag('config', 'UA-157373034-1');
+            gtag( "config", "UA-157373034-1" );
         </script>
     </head>
     
@@ -68,6 +68,7 @@
         </header>
         
         <main class="uk-container" id="content">
+            
             <ul class="uk-subnav uk-subnav-pill" uk-switcher="swiping: false" style="margin-bottom: -20px;" id="navigation">
                 <li><a href="#">Intro</a></li>
                 <li><a href="#">Experience</a></li>
@@ -92,19 +93,32 @@
                 </li>
                 
                 <li class="uk-section" id="experience">
-                    <div uk-grid>
+                    <div uk-grid class="uk-visible@m">
                         <div class="uk-width-1-5@m">
                             <div uk-sticky="bottom: true; offset: 50px">
                                 <ul class="uk-nav uk-nav-default experience-nav-side uk-text-uppercase uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true" id="experience-nav">
                                     
                                 </ul>
                                 <br>
-                                <a class="uk-button bg-secondary uk-text-center" href="assets/pdfs/resume_shardul_joshi.pdf">Resume</a>
+                                <a class="uk-button uk-button-primary bg-secondary" href="assets/pdfs/resume_shardul_joshi.pdf">Resume</a>
                             </div>
                         </div>
                         <div class="uk-width-expand@m" id="experience-cards">
                             
                         </div>
+                    </div>
+                    
+                    <div class="uk-hidden@m">
+                        Select experience item...
+                        <select class="uk-select experience-mobile-nav" id="experience-mobile-nav" data-target="#experience-mobile-cards">
+                            
+                        </select>
+
+                        <div class="uk-margin experience-mobile-cards" id="experience-mobile-cards">
+
+                        </div>
+                        
+                        <a class="uk-button uk-button-primary bg-secondary uk-width-1-1" href="assets/pdfs/resume_shardul_joshi.pdf">Resume</a>
                     </div>
                 </li>
                 

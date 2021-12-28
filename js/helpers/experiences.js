@@ -172,4 +172,5 @@ var seeking_position = false;
 
 // HTML elements
 var experience_link = "<li><a href=\"#%id%\">%link_text%</a></li>";
+var experience_option = "<option value=\"%link_text%\" data-show=\".%id%-mobile-card\">%link_text%</option>";
 var experience_card = "<div class=\"uk-card uk-card-default\" id=\"%id%\"><div class=\"uk-card-header\"><h3 class=\"uk-card-title uk-margin-remove-bottom text-primary\">%name%</h3><p style=\"font-size: 15px;\" class=\"uk-text-meta uk-margin-remove-top\">%location% | %dates% | <i>%position%</i></p></div><div class=\"uk-card-body\" style=\"padding-top: 15px;\"><ul>%description%</ul></div></div>";
