@@ -256,7 +256,7 @@ var ahs =
     id: "ahs",
     name: "Andover High School",
     abbreviation: "AHS",
-    degree: "High school diploma",
+    degree: "High School Diploma",
     location: "Andover, MA",
     grad_year: "2019",
     gpa: "3.87 (unweighted), 4.53 (weighted)",
