@@ -140,31 +140,27 @@ var cadence =
     position: "Software engineering intern",
     description:
     [
-        "Worked on feature development for flagship Allegro chip design layout software",
-        "Refactored legacy C/C++ codebase to adhere to company software principles",
-        "Designed and developed color customization tool using C++ and Qt framework",
-        "Added functionality to Allegro scripting framework to enable tutorial recording and replay"
+        "Worked as part of the team developing Cadence's chip design layout software, Allegro"
     ]
 };
 experiences.push(cadence);
 
-// Amazon
-var amazon =
+// Amazon internship
+var amazon_intern =
 {
-    id: "amazon",
+    id: "amazon_intern",
     link_text: "Amazon (AWS)",
     name: "Amazon Web Services",
     location: "Boston, MA",
     start_date: "May 2021",
-    end_date: "", // Aug 2021
+    end_date: "Aug 2021",
     position: "Software development engineer intern",
     description:
     [
-        "Designed and developed an optimization service for Infrequent Access storage in AWS Elastic File System utilizing various AWS microservices, architecture, and toolkits (Lambda, Simple Queue Service, Cloud Development Kit, etc.)",
-        "Estimated to significantly reduce storage costs, the savings from which can be passed onto customers"
+        "Worked as a part of the Amazon Web Services Elastic File System team"
     ]
 };
-experiences.push(amazon);
+experiences.push(amazon_intern);
 
 // Seeking position message
 var seeking_position_msg = "Seeking full-time software development position starting summer 2022";
