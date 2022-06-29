@@ -32,6 +32,10 @@ var poly =
     positions:
     [
         {
+            title: "Associate Copy Editor",
+            start_date: "December 2021",
+            end_date: "February 2022"
+        },{
             title: "Contributing Editor",
             start_date: "April 2021",
             end_date: "December 2021"
