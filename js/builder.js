@@ -261,6 +261,7 @@ for ( let i = 0; i < skill_types.length; i++ )
         // Create the skill chip
         var chip = skill_chip;
         chip = chip.replace( "%type%", skill_type.filter );
+        chip = chip.replace( "%text-color%", skill_type.text_color );
         chip = chip.replace( "%skill%", skill );
         
         // Add the skill chip to the list of skill chips

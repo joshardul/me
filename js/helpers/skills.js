@@ -9,13 +9,14 @@ var technical =
 {
     filter: "technical",
     name: "Technical",
+    text_color: "primary",
     skills:
     [
-        "Python",
+        "Python (pandas, NumPy, PyTorch, scikit-learn, OpenCV)",
         "C",
-        "C++",
-        "Java",
-        "JUnit",
+        "C++ (Qt framework)",
+        "Java (JUnit framework)",
+        "SQL",
         "Swift",
         "HTML",
         "CSS",
@@ -25,10 +26,6 @@ var technical =
         "Prolog",
         "Scheme",
         "Haskell",
-        "pandas",
-        "NumPy",
-        "PyTorch",
-        "scikit-learn",
         "data structures",
         "object-oriented design",
         "linear algebra",
@@ -36,6 +33,7 @@ var technical =
         "computer architecture",
         "algorithms",
         "software design patterns",
+        "database systems",
         "Microsoft Office",
         "MacOS",
         "Linux",
@@ -51,6 +49,7 @@ var soft =
 {
     filter: "soft",
     name: "Soft",
+    text_color: "secondary",
     skills:
     [
         "writing",
@@ -68,6 +67,7 @@ var languages =
 {
     filter: "language",
     name: "Languages",
+    text_color: "tertiary",
     skills:
     [
         "English",
@@ -80,4 +80,4 @@ skill_types.push(languages);
 
 // HTML elements
 var type_filter_control = "<li uk-filter-control=\"[data-skill-type=\'%filter%\']\"><a href=\"#\">%name%</a></li>";
-var skill_chip = "<li data-skill-type=\"%type%\"><span class=\"chip text-primary\">%skill%</span></li>"
+var skill_chip = "<li data-skill-type=\"%type%\"><span class=\"chip text-%text-color%\">%skill%</span></li>"
