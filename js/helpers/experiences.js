@@ -31,7 +31,7 @@ var iamv =
     location: "MA",
     start_date: "Jul 2017",
     end_date: "Jul 2017",
-    position: "Requirements consultant: voice of customer (volunteer)",
+    position: "Requirements Consultant: voice of customer (volunteer)",
     description:
     [
         "Interviewed the various board members of the Indian Association of Merrimack Valley (IAMV), gathering requirements and feedback for a beta website (<a href=\"http://iamv.org/\">iamv.org</a>) for the organization to later relay that information to an overseas development team"
@@ -65,7 +65,7 @@ var unhtechcamp =
     location: "Durham, NH",
     start_date: "Jul 2019",
     end_date: "Jul 2019",
-    position: "Camp counselor (day and night)",
+    position: "Camp Counselor (day and night)",
     description:
     [
         "Counseled students (grades 8-12) at a STEM camp at the University of New Hampshire",
@@ -102,7 +102,7 @@ var ss =
     location: "Andover, MA",
     start_date: "Nov 2015",
     end_date: "Jul 2019",
-    position: "Co-founder/web-developer",
+    position: "Co-founder/Web-developer",
     description:
     [
         "Co-founded a business to address growing need for various local businesses to build an online presence",
@@ -137,10 +137,10 @@ var cadence =
     location: "Burlington, MA",
     start_date: "May 2020",
     end_date: "Aug 2020",
-    position: "Software engineering intern",
+    position: "Software Engineering Intern",
     description:
     [
-        "Worked as part of the team developing Cadence's chip design layout software, Allegro"
+        "Worked on feature development for flagship Allegro chip design layout software"
     ]
 };
 experiences.push(cadence);
@@ -149,12 +149,12 @@ experiences.push(cadence);
 var amazon_intern =
 {
     id: "amazon_intern",
-    link_text: "Amazon (AWS)",
+    link_text: "AWS (internship)",
     name: "Amazon Web Services",
     location: "Boston, MA",
     start_date: "May 2021",
     end_date: "Aug 2021",
-    position: "Software development engineer intern",
+    position: "Software Development Engineer Intern",
     description:
     [
         "Worked as a part of the Amazon Web Services Elastic File System team"
