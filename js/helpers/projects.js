@@ -171,7 +171,7 @@ var arden =
             alt: "A screenshot of the teacher homepage of a prototype of Arden which was for a business competition I participated in"
         }
     ],
-    description: "Over the course of my junior year, I participated in a program called <a href=\"https://www.tye-boston.org\">TiE Young Entrepreneurs</a>, which was run by the Boston chapter of an organization called <a href=\"https://boston.tie.org\">TiE, or The Indus Entrepreneurs</a>. The program consisted of workshops every other Saturday from September 2017 to April 2018, when it culminated with a business plan competition judged by a panel of real-world venture capitalists. TiE brought in entrepreneurs to speak at these workshops about their experiences and teach us about various aspects of running a startup – research, marketing, finances, prototyping, etc. The cohort split into teams, and my team, recognizing something from our own educational experiences, created a business plan around a software to automate recommendations for teachers that would suggest specific extra help content catered to individual student needs. As CTO of a team of five, I lead the development of an early prototype of the software.",
+    description: "Over the course of my junior year of high school, I participated in a program called <a href=\"https://www.tye-boston.org\">TiE Young Entrepreneurs</a>, which was run by the Boston chapter of an organization called <a href=\"https://boston.tie.org\">TiE, or The Indus Entrepreneurs</a>. The program consisted of workshops every other Saturday from September 2017 to April 2018, when it culminated with a business plan competition judged by a panel of real-world venture capitalists. TiE brought in entrepreneurs to speak at these workshops about their experiences and teach us about various aspects of running a startup – research, marketing, finances, prototyping, etc. The cohort split into teams, and my team, recognizing something from our own educational experiences, created a business plan around a software to automate recommendations for teachers that would suggest specific extra help content catered to individual student needs. As CTO of a team of five, I lead the development of an early prototype of the software.",
     tags:
     [
         "HTML",
@@ -236,7 +236,7 @@ var sofs =
             alt: "A screenshot of the homepage of a website I created for my band, Spoonful of Sarcasm"
         }
     ],
-    description: "This was a simple website that I created for my band, Spoonful of Sarcasm, to help build our online presence. I made this in sophomore year, originally as a project for a web development class, using a CSS and JavaScript framework called <a href=\"https://materializecss.com\">MaterializeCSS</a>. It is based off of Google's Material Design techniques.",
+    description: "This was a simple website that I created for my band, Spoonful of Sarcasm, to help build our online presence. I made this in sophomore year of high school, originally as a project for a web development class, using a CSS and JavaScript framework called <a href=\"https://materializecss.com\">MaterializeCSS</a>. It is based off of Google's Material Design techniques.",
     tags:
     [
         "HTML",
