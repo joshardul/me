@@ -118,7 +118,7 @@ a.no-hover-decoration:hover
     width: 90%;
 }
 
-/* Custom elements */
+/* Custom elements/styling */
 .content-switcher
 {
     background: #fff;
@@ -171,4 +171,25 @@ footer
 .hide
 {
     display: none;
+}
+@media screen and (min-width: 720px)
+{
+    /* Responsive styling for the intro section (padding, hiding/showing images) */
+    #intro
+    {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    #intro #me-ny-cropped2
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 720px)
+{
+    /* Continued responsive styling for the intro section (padding, hiding/showing images) */
+    #intro #me-ny-cropped
+    {
+        display: none;
+    }
 }
