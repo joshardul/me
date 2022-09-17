@@ -5,8 +5,7 @@ var activities = [{}];
 activities.pop(); // Can't figure out how to make this array know it is an array of objects without this line
 
 // Upsilon Pi Epsilon
-var upe =
-{
+activities.push({
     id: "upe",
     organization: "Upsilon Pi Epsilon",
     sub_title: "",
@@ -19,12 +18,10 @@ var upe =
             end_date: ""
         }
     ]
-};
-activities.push(upe);
+});
 
 // The Polytechnic
-var poly =
-{
+activities.push({
     id: "poly",
     organization: "<i>The Polytechnic</i>",
     sub_title: "school newspaper",
@@ -61,12 +58,10 @@ var poly =
             end_date: "Dec 2019"
         }
     ]
-};
-activities.push(poly);
+});
 
 // Spoonful of Sarcasm
-var sofs =
-{
+activities.push({
     id: "sofs",
     organization: "Spoonful of Sarcasm",
     sub_title: "",
@@ -79,12 +74,10 @@ var sofs =
             end_date: "Jun 2019"
         }
     ]
-};
-activities.push(sofs);
+});
 
 // Cross Country (high school)
-var xc =
-{
+activities.push({
     id: "xc",
     organization: "Cross Country",
     sub_title: "high school",
@@ -102,12 +95,10 @@ var xc =
             end_date: "Fall 2015, 2016, 2017"
         }
     ]
-};
-activities.push(xc);
+});
 
 // Computer Science Club (high school)
-var csclubhs =
-{
+activities.push({
     id: "csclubhs",
     organization: "Computer Science Club",
     sub_title: "high school",
@@ -120,12 +111,10 @@ var csclubhs =
             end_date: "June 2019"
         }
     ]
-};
-activities.push(csclubhs);
+});
 
 // Science Team (high school)
-var scienceteam =
-{
+activities.push({
     id: "science-team",
     organization: "Science Team",
     sub_title: "high school",
@@ -143,12 +132,10 @@ var scienceteam =
             end_date: "Jun 2019"
         }
     ]
-};
-activities.push(scienceteam);
+});
 
 // National Honor Society
-var nhs =
-{
+activities.push({
     id: "nhs",
     organization: "National Honor Society",
     sub_title: "",
@@ -161,8 +148,7 @@ var nhs =
             end_date: ""
         }
     ]
-};
-activities.push(nhs);
+});
 
 // HTML elements
 var activity_accordion_item = "<li class=\"%class%\"><a class=\"uk-accordion-title\" href=\"#\">%organization%%sub_title%</a><div class=\"uk-accordion-content\"><p class=\"justify\">%description%</p><table class=\"uk-table uk-table-divider\"><thead><tr><th>Positions held</th><th>Time period</th></tr></thead><tbody id=\"%id%-positions-table\"></tbody></table></div></li>";

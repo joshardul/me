@@ -5,8 +5,7 @@ var projects = [{}];
 projects.pop(); // Can't figure out how to make this array know it is an array of objects without this line
 
 // 7PlusH
-var sevenplush =
-{
+projects.push({
     id: "sevenplush",
     name: "7PlusH",
     start_date: "Jul 2018",
@@ -41,12 +40,10 @@ var sevenplush =
         "Swift",
         "Xcode"
     ]
-};
-projects.push(sevenplush);
+});
 
 // CourseHub
-var coursehub =
-{
+projects.push({
     id: "coursehub",
     name: "CourseHub",
     start_date: "Oct 2019",
@@ -97,12 +94,10 @@ var coursehub =
         "Bootstrap",
         "Raspberry Pi"
     ]
-};
-projects.push(coursehub);
+});
 
 // Positweet
-var positweet =
-{
+projects.push({
     id: "positweet",
     name: "Positweet",
     start_date: "April 2019",
@@ -148,12 +143,10 @@ var positweet =
         "Twitter",
         "Bootstrap"
     ]
-};
-projects.push(positweet);
+});
 
 // Arden
-var arden =
-{
+projects.push({
     id: "arden",
     name: "Arden",
     start_date: "Sep 2017",
@@ -178,12 +171,10 @@ var arden =
         "CSS",
         "Bootstrap"
     ]
-};
-projects.push(arden);
+});
 
 // IAMV
-var iamv =
-{
+projects.push({
     id: "iamv",
     name: "IAMV",
     start_date: "Jul 2017",
@@ -210,12 +201,10 @@ var iamv =
         "Requirements",
         "Feedback"
     ]
-};
-projects.push(iamv);
+});
 
 // Spoonful of Sarcasm
-var sofs =
-{
+projects.push({
     id: "sofs",
     name: "Spoonful of Sarcasm",
     start_date: "Jan 2019",
@@ -244,10 +233,7 @@ var sofs =
         "Heroku",
         "MaterializeCSS"
     ]
-};
-projects.push(sofs);
-
-
+});
 
 // HTML elements
 var project_card = "<div class=\"uk-width-1-2@m\"><div class=\"uk-card uk-card-default uk-flex uk-flex-center\"><div class=\"uk-card-body\"><h3>%name% <span style=\"font-size: 15px\" class=\"uk-text-muted\">%dates%</span><span class=\"uk-align-right text-dark\" style=\"position: relative; bottom: 2px;\">%icons%</span></h3><div uk-slider=\"center: true\" style=\"width: 100%\"><div class=\"uk-position-relative uk-visible-toggle uk-light\" tabindex=\"-1\"><ul class=\"uk-slider-items uk-child-width-%slider_width%@s uk-grid\" id=\"%id%-slider\"></ul></div><ul class=\"uk-slider-nav uk-dotnav uk-flex-center uk-margin\"></ul></div><p class=\"indent\">%description%</p><div class=\"uk-text-center\">%tags%</div></div></div>%extra%</div>";

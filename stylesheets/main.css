@@ -1,12 +1,17 @@
 /* Theme coloring classes */
+:root {
+    --primary: #00695C;
+    --secondary: #00B8D4;
+    --tertiary: #FF9100;
+}
 .bg-primary
 {
-    background: #00695C;
+    background: var(--primary);
     color: #fff;
 }
 .bg-secondary
 {
-    background: #00B8D4;
+    background: var(--secondary);
     color: #fff;
 }
 .bg-primary *, .bg-secondary *
@@ -15,15 +20,15 @@
 }
 .text-primary
 {
-    color: #00695C !important;
+    color: var(--primary) !important;
 }
 .text-secondary
 {
-    color: #00B8D4 !important;
+    color: var(--secondary) !important;
 }
 .text-tertiary
 {
-    color: #FF9100 !important;
+    color: var(--tertiary) !important;
 }
 .text-dark
 {

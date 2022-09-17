@@ -89,13 +89,15 @@ for ( let i = 0; i < schools.length; i++ )
     section = section.replace( "%name%", school.name );
     section = section.replace( "%degree%", school.degree );
     section = section.replace( "%location%", school.location );
+    section = section.replace( "%link%", school.link );
+    section = section.replace( "%link_display_text%", school.link_display_text );
     section = section.replace( "%grad_year%", school.grad_year );
     section = section.replace( "%gpa%", school.gpa );
     // Create additional details list
     var additional_details = "";
     for ( let j = 0; j < school.details.length; j++ )
     {
-        additional_details += school.details[j];
+        additional_details += "<i>" + school.details[j] + "</i>";
         if ( j < school.details.length - 1 )
         {
             additional_details += "<br>";

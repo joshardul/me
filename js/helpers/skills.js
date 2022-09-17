@@ -5,8 +5,7 @@ var skill_types = [{}];
 skill_types.pop(); // Can't figure out how to make this array know it is an array of objects without this line
 
 // Technical
-var technical =
-{
+skill_types.push({
     filter: "technical",
     name: "Technical",
     text_color: "primary",
@@ -41,12 +40,10 @@ var technical =
         "LaTeX",
         "Agile project planning"
     ]
-};
-skill_types.push(technical);
+});
 
 // Soft
-var soft =
-{
+skill_types.push({
     filter: "soft",
     name: "Soft",
     text_color: "secondary",
@@ -59,12 +56,10 @@ var soft =
         "public speaking",
         "teamwork"
     ]
-};
-skill_types.push(soft);
+});
 
 // Languages
-var languages =
-{
+skill_types.push({
     filter: "language",
     name: "Languages",
     text_color: "tertiary",
@@ -74,8 +69,7 @@ var languages =
         "Spanish",
         "Marathi"
     ]
-};
-skill_types.push(languages);
+});
 
 
 // HTML elements

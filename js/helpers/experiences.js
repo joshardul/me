@@ -5,8 +5,7 @@ var experiences = [{}];
 experiences.pop(); // Can't figure out how to make this array know it is an array of objects without this line
 
 // Konjoian Education Center
-var kec =
-{
+experiences.push({
     id: "kec",
     link_text: "KEC",
     name: "Konjoian Education Center",
@@ -19,12 +18,10 @@ var kec =
         "Gathered requirements, designed and built the center’s website: <a href=\"http://www.konjoianeducationcenter.com/\">www.konjoianeducationcenter.com</a>",
         "Worked with business manager to implement new technologies for the company, such as email and online scheduling, and taught the staff how to use these technologies"
     ]
-};
-experiences.push(kec);
+});
 
 // IAMV
-var iamv =
-{
+experiences.push({
     id: "iamv",
     link_text: "IAMV",
     name: "Indian Association of Merrimack Valley",
@@ -36,12 +33,10 @@ var iamv =
     [
         "Interviewed the various board members of the Indian Association of Merrimack Valley (IAMV), gathering requirements and feedback for a beta website (<a href=\"http://iamv.org/\">iamv.org</a>) for the organization to later relay that information to an overseas development team"
     ]
-};
-experiences.push(iamv);
+});
 
 // RSM
-var rsm =
-{
+experiences.push({
     id: "rsm",
     link_text: "RSM",
     name: "Russian School of Mathematics",
@@ -53,12 +48,10 @@ var rsm =
     [
         "Tutored students from grades 5-10 in mathematics by helping with math homework and concepts"
     ]
-};
-experiences.push(rsm);
+});
 
 // UNH Tech Camp
-var unhtechcamp =
-{
+experiences.push({
     id: "unhtechcamp",
     link_text: "UNH Tech Camp",
     name: "University of New Hampshire Tech Camp",
@@ -71,12 +64,10 @@ var unhtechcamp =
         "Counseled students (grades 8-12) at a STEM camp at the University of New Hampshire",
         "Aided students in various projects, including introductions to programming"
     ]
-};
-experiences.push(unhtechcamp);
+});
 
 // TYE
-var tye =
-{
+experiences.push({
     id: "tye",
     link_text: "TYE",
     name: "TiE Boston Young Entrepreneurs",
@@ -90,12 +81,10 @@ var tye =
         "Learned from real-world entrepreneurs about various aspects of running a startup (research, marketing, finance, prototyping, presentation, teamwork, and other interpersonal skills)",
         "Conceived, designed, and proposed, with early prototypes, a software to automate recommendations for teachers that suggest specific extra-help content catered to individual student needs"
     ]
-};
-experiences.push(tye);
+});
 
 // Syntax Solutions
-var ss =
-{
+experiences.push({
     id: "ss",
     link_text: "Syntax Solutions",
     name: "Syntax Solutions",
@@ -108,12 +97,10 @@ var ss =
         "Co-founded a business to address growing need for various local businesses to build an online presence",
         "Portfolio of multiple, completed projects available at <a href=\"http://syntax-solutions.xyz/\">syntax-solutions.xyz</a>"
     ]
-};
-experiences.push(ss);
+});
 
 // ALAC
-var alac =
-{
+experiences.push({
     id: "alac",
     link_text: "ALAC",
     name: "Rensselaer Advising and Learning Assistance Center",
@@ -125,12 +112,10 @@ var alac =
     [
         "Tutored and provided homework help to students in Data Structures course at RPI"
     ]
-};
-experiences.push(alac);
+});
 
 // Cadence
-var cadence =
-{
+experiences.push({
     id: "cadence",
     link_text: "Cadence",
     name: "Cadence Design Systems",
@@ -142,14 +127,12 @@ var cadence =
     [
         "Worked on feature development for flagship Allegro chip design layout software"
     ]
-};
-experiences.push(cadence);
+});
 
 // Amazon internship
-var amazon_intern =
-{
+experiences.push({
     id: "amazon_intern",
-    link_text: "AWS (internship)",
+    link_text: "AWS (intern)",
     name: "Amazon Web Services",
     location: "Boston, MA",
     start_date: "May 2021",
@@ -159,8 +142,22 @@ var amazon_intern =
     [
         "Worked as a part of the Amazon Web Services Elastic File System team"
     ]
-};
-experiences.push(amazon_intern);
+});
+
+// Amazon
+experiences.push({
+    id: "amazon",
+    link_text: "AWS",
+    name: "Amazon Web Services",
+    location: "Boston, MA",
+    start_date: "Aug 2022",
+    end_date: "Present",
+    position: "Software Development Engineer I",
+    description:
+    [
+        "Working as a part of the Amazon Web Services Elastic File System team"
+    ]
+});
 
 // Seeking position message
 var seeking_position_msg = "Seeking full-time software development position starting summer 2022";
