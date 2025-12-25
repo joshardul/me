@@ -190,7 +190,7 @@ footer
 }
 @media screen and (min-width: 720px)
 {
-    /* Responsive styling for the intro section (padding, hiding/showing images) */
+    /* Responsive styling for the intro section for mobile (padding, hiding/showing images) */
     #intro
     {
         padding-left: 20%;
@@ -203,7 +203,7 @@ footer
 }
 @media screen and (max-width: 720px)
 {
-    /* Continued responsive styling for the intro section (padding, hiding/showing images) */
+    /* Continued responsive styling for the intro section for non-mobile (padding, hiding/showing images) */
     #intro #me-intro-desktop
     {
         display: none;
