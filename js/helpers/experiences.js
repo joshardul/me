@@ -129,7 +129,7 @@ experiences.push({
     ]
 });
 
-// Amazon internship
+// Amazon SDE intern
 experiences.push({
     id: "amazon_intern",
     link_text: "AWS (intern)",
@@ -140,28 +140,39 @@ experiences.push({
     position: "Software Development Engineer Intern",
     description:
     [
-        "Worked as a part of the Amazon Web Services Elastic File System team"
+        "On the Amazon Web Services Elastic File System team"
     ]
 });
 
-// Amazon
+// Amazon SDE I
 experiences.push({
-    id: "amazon",
-    link_text: "AWS",
+    id: "amazon_sde_1",
+    link_text: "AWS (SDE I)",
     name: "Amazon Web Services",
     location: "Boston, MA",
     start_date: "Aug 2022",
-    end_date: "Present",
+    end_date: "Oct 2024",
     position: "Software Development Engineer I",
     description:
     [
-        "Working as a part of the Amazon Web Services Elastic File System team"
+        "On the Amazon Web Services Elastic File System team"
     ]
 });
 
-// Seeking position message
-var seeking_position_msg = "Seeking full-time software development position starting summer 2022";
-var seeking_position = false;
+// Amazon SDE II
+experiences.push({
+    id: "amazon_sde_2",
+    link_text: "AWS (SDE II)",
+    name: "Amazon Web Services",
+    location: "Boston, MA",
+    start_date: "Oct 2024",
+    end_date: "Present",
+    position: "Software Development Engineer II",
+    description:
+    [
+        "On the Amazon Web Services Elastic File System team"
+    ]
+});
 
 // HTML elements
 var experience_link = "<li><a href=\"#%id%\">%link_text%</a></li>";

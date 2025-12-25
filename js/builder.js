@@ -69,12 +69,6 @@ trig_func = function()
 }
 $( document ).ready( trig_func );
 
-// Add seeking position message if seeking position
-if ( seeking_position )
-{
-    $( "#seeking-position-msg" ).prepend( seeking_position_msg );
-}
-
 // Build education section
 for ( let i = 0; i < schools.length; i++ )
 {
