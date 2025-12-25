@@ -71,6 +71,7 @@ skill_types.push({
     ]
 });
 
+// TODO: update skills with skills from latest version of resume (and upload said resume)
 
 // HTML elements
 var type_filter_control = "<li uk-filter-control=\"[data-skill-type=\'%filter%\']\"><a href=\"#\">%name%</a></li>";
