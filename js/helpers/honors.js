@@ -116,5 +116,7 @@ var national_ap_scholar =
 };
 honors.push(national_ap_scholar);
 
+// TODO: add Dean's Honor List, Magna Cum Laude, UPE, honor roll (high school, maybe)
+
 // HTML elements
 var honor_row = "<tr><td>%title%</td><td>%levels%</td><td>%dates%</td></tr>";
