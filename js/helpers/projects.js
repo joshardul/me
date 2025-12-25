@@ -237,7 +237,7 @@ projects.push({
 
 // HTML elements
 var project_card = "<div class=\"uk-width-1-2@m\"><div class=\"uk-card uk-card-default uk-flex uk-flex-center\"><div class=\"uk-card-body\"><h3>%name% <span style=\"font-size: 15px\" class=\"uk-text-muted\">%dates%</span><span class=\"uk-align-right text-dark\" style=\"position: relative; bottom: 2px;\">%icons%</span></h3><div uk-slider=\"center: true\" style=\"width: 100%\"><div class=\"uk-position-relative uk-visible-toggle uk-light\" tabindex=\"-1\"><ul class=\"uk-slider-items uk-child-width-%slider_width%@s uk-grid\" id=\"%id%-slider\"></ul></div><ul class=\"uk-slider-nav uk-dotnav uk-flex-center uk-margin\"></ul></div><p class=\"indent\">%description%</p><div class=\"uk-text-center\">%tags%</div></div></div>%extra%</div>";
-var project_icon = "<a uk-icon=\"icon: %icon%; ratio: 1.3\" class=\"text-dark\" href=\"%link%\" uk-tooltip=\"title: %icon-title%; pos: top\"></a>";
+var project_icon = "<a uk-icon=\"icon: %icon%; ratio: 1.3\" class=\"text-dark\" href=\"%link%\" uk-tooltip=\"title: %icon_title%; pos: top\"></a>";
 var project_slider_item = "<li><img class=\"materialboxed\" alt=\"%alt%\" src=\"assets/images/projects/%folder%/%name%\"></li>"
 var project_tag = "<span class=\"uk-label bg-secondary\">%name%</span>";
 var questions_card = "<div class=\"uk-card uk-card-default uk-flex uk-flex-center uk-grid-item-match\" style=\"margin-top: 30px;\"><div class=\"uk-card-body\"><h5 class=\"uk-text-center text-dark\">If you have questions regarding any of my projects, or you see anything that interests you, feel free to <a href=\"#\" uk-switcher-item=\"7\">contact me</a>.</h5></div></div>";

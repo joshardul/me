@@ -20,21 +20,33 @@ for ( let i = 0; i < experiences.length; i++ )
     card = card.replace( "%id%", experience.id );
     card = card.replace( "%name%", experience.name );
     card = card.replace( "%location%", experience.location );
-    var dates = "";
-    if ( experience.start_date == experience.end_date )
-    {
-        dates = experience.start_date;
+    var positions = "";
+    for ( let j = 0; j < experience.positions.length; j++ ) {
+        var position = experience.positions[j];
+        
+        var position_line = experience_position_line;
+        position_line = position_line.replace( "%title%", position.title );
+        var dates = "";
+        if ( !position.end_date )
+        {
+            dates = position.start_date + " - present";
+        }
+        else if ( position.start_date == position.end_date )
+        {
+            dates = position.start_date;
+        }
+        else
+        {
+            dates = position.start_date + " - " + position.end_date;
+        }
+        position_line = position_line.replace( "%dates%", dates );
+        
+        positions += position_line;
+        if (j != experience.positions.length - 1) {
+            positions += "<br>"
+        }
     }
-    else if ( experience.end_date == "" )
-    {
-        dates = experience.start_date + " - present";
-    }
-    else
-    {
-        dates = experience.start_date + " - " + experience.end_date;
-    }
-    card = card.replace( "%dates%", dates );
-    card = card.replace( "%position%", experience.position );
+    card = card.replace( "%positions%", positions );
     // Create the description list
     var description = "";
     for ( let j = 0; j < experience.description.length; j++ )
@@ -160,7 +172,7 @@ for ( let i = 0; i < projects.length; i++ )
         var icon_link = project_icon;
         icon_link = icon_link.replace( "%icon%", link.icon );
         icon_link = icon_link.replace( "%link%", link.link );
-        icon_link = icon_link.replace( "%title%", link.title );
+        icon_link = icon_link.replace( "%icon_title%", link.title );
         
         // Add the icon link to list of icons
         icons += icon_link;

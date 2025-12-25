@@ -255,8 +255,7 @@ schools.push({
     [
         "Honor Roll",
         "National Honors Society",
-        "Top 10% of a 446-member graduating class",
-        "<br>"
+        "Top 10% of a 446-member graduating class"
     ],
     courses: ahs_classes,
     catalog: "http://www.aps1.net/DocumentCenter/View/7804/Program-of-Studies?bidId="
@@ -267,7 +266,7 @@ schools.push({
     id: "rpi",
     name: "Rensselaer Polytechnic Institute",
     abbreviation: "RPI",
-    degree: "Bachelors of Science, Computer Science",
+    degree: "Bachelor of Science in Computer Science",
     location: "Troy, NY",
     link: "https://www.rpi.edu",
     link_display_text: "rpi.edu",
@@ -284,6 +283,7 @@ schools.push({
         "Magna Cum Laude",
         "Dean's Honor List",
         "Upsilon Pi Epsilon (UPE)",
+        "Concentration in Artificial Intelligence and Data",
         "Minor in Management"
     ],
     courses: rpi_classes,
