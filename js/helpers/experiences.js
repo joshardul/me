@@ -175,7 +175,7 @@ experiences.push({
     ],
     description:
     [
-        "EFS is a managed, cloud-based file system offering scalable, durable storage for AWS compute workloads",
+        // "EFS is a managed, cloud-based file system offering scalable, durable storage for AWS compute workloads",
         "Owner of the EFS Lifecycle Management feature, serving as primary point of contact for design, operations (improving throughput of large-scale data migrations between hot and cold storage through event-time tuning and follow-up code optimizations), and customer impact",
         "Serve as primary point of contact for EFS metering and billing workflows, maintaining correctness and operational stability by diagnosing and resolving production issues",
         "Act as operational lead for team-owned EFS features during events, driving root cause analysis, customer impact assessment, and long-term mitigations",
