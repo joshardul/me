@@ -15,7 +15,7 @@ activities.push({
         {
             title: "Member",
             start_date: "Dec 2020",
-            end_date: ""
+            end_date: "May 2022"
         }
     ]
 });
