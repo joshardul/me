@@ -95,7 +95,7 @@ experiences.push({
     description:
     [
         "Co-founded a business to address growing need for various local businesses to build an online presence",
-        "Portfolio of multiple, completed projects available at <a href=\"http://syntax-solutions.xyz/\">syntax-solutions.xyz</a>"
+        "Business has been dissolved, so <a href=\"http://syntax-solutions.xyz/\">syntax-solutions.xyz</a> has also been taken down"
     ]
 });
 
