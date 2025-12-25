@@ -1,8 +1,8 @@
 // Activities helpers
 
-// Activities objects
+// Can't figure out how to make this array know it is an array of objects without these two lines
 var activities = [{}];
-activities.pop(); // Can't figure out how to make this array know it is an array of objects without this line
+activities.pop(); 
 
 // Upsilon Pi Epsilon
 activities.push({

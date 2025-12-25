@@ -1,8 +1,8 @@
 // Honors helpers
 
-// Honor objects
+// Can't figure out how to make this array know it is an array of objects without these two lines
 var honors = [{}];
-honors.pop(); // Can't figure out how to make this array know it is an array of objects without this line
+honors.pop();
 
 // Excellence in Java Programming
 var excellence_java =

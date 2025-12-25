@@ -1,8 +1,8 @@
 // Skills helpers
 
-// Skill type objects
+// Can't figure out how to make this array know it is an array of objects without these two lines
 var skill_types = [{}];
-skill_types.pop(); // Can't figure out how to make this array know it is an array of objects without this line
+skill_types.pop();
 
 // Technical
 skill_types.push({

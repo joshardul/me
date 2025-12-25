@@ -1,10 +1,10 @@
 // Education helpers
 
-// Class objects
+// // Can't figure out how to make these arrays know they are arrays of objects without these four lines
 var ahs_classes = [{}];
 var rpi_classes = [{}];
-ahs_classes.pop(); // Can't figure out how to make this array know it is an array of objects without this line
-rpi_classes.pop(); // Can't figure out how to make this array know it is an array of objects without this line
+ahs_classes.pop();
+rpi_classes.pop();
 
 // AP Computer Science Principles
 ahs_classes.push({
@@ -230,9 +230,9 @@ rpi_classes.push({
     description: "General understanding of the business world and introduction to various aspects of it, such as finance, entrepreneurship, supply chain management, strategy, marketing, etc."
 });
 
-// School objects
+// Can't figure out how to make this array know it is an array of objects without these two lines
 var schools = [{}];
-schools.pop(); // Can't figure out how to make this array know it is an array of objects without this line
+schools.pop();
 
 // Andover High School
 schools.push({

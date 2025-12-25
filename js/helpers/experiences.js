@@ -1,8 +1,8 @@
 // Experiences helpers
 
-// Experiences objects
+// Can't figure out how to make this array know it is an array of objects without these two lines
 var experiences = [{}];
-experiences.pop(); // Can't figure out how to make this array know it is an array of objects without this line
+experiences.pop();
 
 // Konjoian Education Center
 experiences.push({

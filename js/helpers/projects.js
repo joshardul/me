@@ -1,8 +1,8 @@
 // Projects helpers
 
-// Projects objects
+// Can't figure out how to make this array know it is an array of objects without these two lines
 var projects = [{}];
-projects.pop(); // Can't figure out how to make this array know it is an array of objects without this line
+projects.pop();
 
 // 7PlusH
 projects.push({
