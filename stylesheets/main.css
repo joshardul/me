@@ -1,8 +1,19 @@
 /* Theme coloring classes */
 :root {
     --primary: #00695C;
+    --primary-hover: #26A69A;
     --secondary: #00B8D4;
-    --tertiary: #FF9100;
+    --secondary-hover: #0097A7;
+    --tertiary: #FF9100; 
+    /*
+        TODO: adopt this scheme
+        --primary: #00B8D4;
+        --primary-hover: #0097A7;
+        --secondary: #C96DF7;
+        --secondary-hover: #B840F5;
+        --tertiary: #00695C;
+        --tertiary-hover: #26A69A;
+    */
 }
 .bg-primary
 {
@@ -50,11 +61,11 @@ body
 }
 a
 {
-    color: #00B8D4;
+    color: #00B8D4; /* This is intentionally not set to var(--secondary) so it shows as blue */
 }
 a:hover
 {
-    color: #00B8D4;
+    color: var(--secondary-hover);
     text-decoration: underline;
 }
 
@@ -68,7 +79,7 @@ a:hover
 /* Overriding/adding to UIKit CSS */
 .uk-subnav-pill .uk-active a
 {
-    background: #00B8D4;
+    background: var(--secondary);
 }
 #experience .uk-card
 {
@@ -76,16 +87,16 @@ a:hover
 }
 .experience-nav-side .uk-active a
 {
-    border-left: 2px solid #00B8D4;
+    border-left: 2px solid var(--secondary);
     padding-left: 5px !important;
 }
 a.uk-button.bg-secondary:hover
 {
-    background: #0097A7;
+    background: var(--secondary-hover);
 }
 a.uk-button.bg-primary:hover
 {
-    background: #26A69A;
+    background: var(--primary-hover);
 }
 .uk-accordion-content
 {
@@ -99,7 +110,7 @@ main
 }
 .uk-tab-ul .uk-active a
 {
-    border-bottom-color: #00B8D4;
+    border-bottom-color: var(--secondary);
 }
 .uk-label-custom
 {
@@ -185,7 +196,7 @@ footer
         padding-left: 20%;
         padding-right: 20%;
     }
-    #intro #me-ny-cropped2
+    #intro #me-intro-mobile
     {
         display: none;
     }
@@ -193,7 +204,7 @@ footer
 @media screen and (max-width: 720px)
 {
     /* Continued responsive styling for the intro section (padding, hiding/showing images) */
-    #intro #me-ny-cropped
+    #intro #me-intro-desktop
     {
         display: none;
     }
