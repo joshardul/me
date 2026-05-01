@@ -176,14 +176,15 @@ experiences.push({
     description:
     [
         // "EFS is a managed, cloud-based file system offering scalable, durable storage for AWS compute workloads",
-        "Owner of the EFS Lifecycle Management feature, serving as primary point of contact for design, operations (improving throughput of large-scale data migrations between hot and cold storage through event-time tuning and follow-up code optimizations), and customer impact",
-        "Serve as primary point of contact for EFS metering and billing workflows, maintaining correctness and operational stability by diagnosing and resolving production issues",
-        "Act as operational lead for team-owned EFS features during events, driving root cause analysis, customer impact assessment, and long-term mitigations",
-        "Authored and drove design documents for new EFS features and internal optimization initiatives, influencing technical direction and prioritization",
-        "Contributed to the development and delivery of multiple EFS features and internal optimizations, including the EFS Archive storage class and a garbage collection/cost-optimization workflow",
-        "Leveraged the EFS data lake to analyze customer workloads and internal system state, supporting feature and project planning, event investigations, and customer issue resolution",
-        "Mentored interns and new hires, including guiding design and implementation of fault-injection testing for a new EFS feature and performance improvements to internal workflows",
-        "Improved operational visibility and reduced alert noise by enhancing metrics, dashboards, automated canary workflows, and alarms for EFS subsystems"
+        "Developed core S3 Files elastic file data map functionality and enabled reads/writes against that structure, including support for S3-to-EFS import",
+        "Led S3 Files launch billing/metering testing, safety mechanisms, and rollout",
+        "Owner of EFS Lifecycle Management; improved throughput of large-scale data migrations between storage tiers through event-time tuning and targeted code optimizations",
+        "Primary owner of EFS metering and billing workflows, maintaining correctness and operational stability by diagnosing and resolving production issues",
+        "Operational lead across multiple EFS subsystems during events, driving root cause analysis, customer impact assessment, and long-term mitigations",
+        "Contributed to the development and delivery of multiple EFS features including the EFS Archive storage class and a garbage collection/cost-optimization workflow",
+        "Leveraged the EFS data lake to analyze customer workloads and internal system state, supporting feature planning, event investigations, and customer issue resolution",
+        "Mentored intern and new hire projects, including guiding fault-injection testing design for S3 Files and performance improvements to internal workflows",
+        "Improved operational visibility and reduced alert noise by enhancing metrics, dashboards, canary workflows, and alarms across EFS subsystems"
     ]
 });
 
