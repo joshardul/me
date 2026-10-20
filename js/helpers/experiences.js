@@ -176,14 +176,12 @@ experiences.push({
     description:
     [
         // "EFS is a managed, cloud-based file system offering scalable, durable storage for AWS compute workloads",
-        "Developed core S3 Files elastic file data map functionality and enabled reads/writes against that structure, including support for S3-to-EFS import",
-        "Led S3 Files launch billing/metering testing, safety mechanisms, and rollout",
-        "Owner of EFS Lifecycle Management; improved throughput of large-scale data migrations between storage tiers through event-time tuning and targeted code optimizations",
-        "Primary owner of EFS metering and billing workflows, maintaining correctness and operational stability by diagnosing and resolving production issues",
-        "Operational lead across multiple EFS subsystems during events, driving root cause analysis, customer impact assessment, and long-term mitigations",
-        "Contributed to the development and delivery of multiple EFS features including the EFS Archive storage class and a garbage collection/cost-optimization workflow",
+        "Developed core S3 Files elastic data-pointer-map and built APIs addressing requirements from 4 scrum teams to enable file operations against that structure from both the file system view and the synchronization processes",
+        "Led S3 Files launch metering/billing testing, safeties, and rollout of changes made by 4 separate teams; personally identified 3+ bugs prior to launch and coordinated fixes amongst myself and others",
+        "Operational lead for features available in 40+ regions (EFS & S3Files metering, EFS Lifecycle Management, EFS Replication, EFS Backup, S3 Files exports; maintain a high bar through proactive observation, thorough root cause analysis, detail-oriented customer impact assessment, prompt/targeted event mitigation (e.g. system performance tuning or targeting code optimizations), and robust designs for long-term solutions.",
+        "Contributed to the development and delivery of multiple EFS features and systems, including the EFS Archive storage class and an internal garbage collection/cost-optimization workflow",
         "Leveraged the EFS data lake to analyze customer workloads and internal system state, supporting feature planning, event investigations, and customer issue resolution",
-        "Mentored intern and new hire projects, including guiding fault-injection testing design for S3 Files and performance improvements to internal workflows",
+        "Designed and mentored 4 intern and new-hire projects, including guiding fault-injection testing for S3 Files and performance improvements to internal workflows",
         "Improved operational visibility and reduced alert noise by enhancing metrics, dashboards, canary workflows, and alarms across EFS subsystems"
     ]
 });
